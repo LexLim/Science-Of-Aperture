@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "soa:block/dark_panel_top",
+    "side": "soa:block/dark_panel_slab_side",
+    "top": "soa:block/dark_panel_top"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "soa:lunar_panel",
+    "soa:lunar_panel_slab",
+    "soa:tiled_lunar_panel",
+    "soa:tiled_lunar_panel_slab",
+    "soa:double_lunar_panel"
+  ]
+}

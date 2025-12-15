@@ -1,0 +1,11 @@
+// 1.21.1	2025-11-10T18:43:18.5170951	Loot Tables
+940364d92e54981e950a793b16ff7787f91d0cc1 data/soa/loot_table/blocks/dark_panel.json
+c4e3c469aa1dbc179cc5c4ea9eead7e0c32f8f5e data/soa/loot_table/blocks/dark_panel_slab.json
+0634fcea4dd82d784ac95a55c4d1427dc2a6d7a3 data/soa/loot_table/blocks/double_dark_panel.json
+5495c3c2050debffdc153e5e6fbda002126b44f9 data/soa/loot_table/blocks/double_lunar_panel.json
+38f1484fa9544178e17127e974db7fdf023bf3cb data/soa/loot_table/blocks/lunar_panel.json
+46e26673225967a22565df894a49b9eb87396c2a data/soa/loot_table/blocks/lunar_panel_slab.json
+d9615ea51df8d71c86a1a047111bf35a8cfaf583 data/soa/loot_table/blocks/tiled_dark_panel.json
+3ef927fbef237dd6756f951c2b73b21392f29ef1 data/soa/loot_table/blocks/tiled_dark_panel_slab.json
+98ebb4b31568fb15b6ceaa7caaed89c48d4fe550 data/soa/loot_table/blocks/tiled_lunar_panel.json
+b5af5cdba70c1fb7e40f70496dd278a1f65c2844 data/soa/loot_table/blocks/tiled_lunar_panel_slab.json

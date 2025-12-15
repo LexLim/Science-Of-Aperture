@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lower=false": {
+      "model": "soa:block/double_dark_panel_top"
+    },
+    "lower=true": {
+      "model": "soa:block/double_dark_panel_bottom"
+    }
+  }
+}
