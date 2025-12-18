@@ -8,8 +8,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.lex.soa.Soa;
-import org.lex.soa.blocks.DoubleDarkPanelBlock;
-import org.lex.soa.blocks.DoubleLunarPanelBlock;
+import org.lex.soa.blocks.DoublePanelBlock;
 
 import java.util.function.Supplier;
 
@@ -32,8 +31,11 @@ public class ModBlocks {
     public static final DeferredBlock<SlabBlock> TILED_DARK_PANEL_SLAB = registerBlockWithItem("tiled_dark_panel_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
 
-    public static final DeferredBlock<DoubleDarkPanelBlock> DOUBLE_DARK_PANEL = registerBlockWithItem("double_dark_panel",
-            () -> new DoubleDarkPanelBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
+    public static final DeferredBlock<DoublePanelBlock> DOUBLE_DARK_PANEL = registerBlockWithItem("double_dark_panel",
+            () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
+
+    public static final DeferredBlock<DoublePanelBlock> DOUBLE_TEST_PANEL = registerBlockWithItem("double_test_panel",
+            () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
 
     public static final DeferredBlock<Block> LUNAR_PANEL = registerBlockWithItem("lunar_panel",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -50,8 +52,8 @@ public class ModBlocks {
     public static final DeferredBlock<SlabBlock> TILED_LUNAR_PANEL_SLAB = registerBlockWithItem("tiled_lunar_panel_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(LUNAR_PANEL.get())));
 
-    public static final DeferredBlock<DoubleLunarPanelBlock> DOUBLE_LUNAR_PANEL = registerBlockWithItem("double_lunar_panel",
-            () -> new DoubleLunarPanelBlock(BlockBehaviour.Properties.ofFullCopy(LUNAR_PANEL.get())));
+    public static final DeferredBlock<DoublePanelBlock> DOUBLE_LUNAR_PANEL = registerBlockWithItem("double_lunar_panel",
+            () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(LUNAR_PANEL.get())));
     
 
     private static <T extends Block> DeferredBlock<T> registerBlockWithItem(String name, Supplier<T> block) {
