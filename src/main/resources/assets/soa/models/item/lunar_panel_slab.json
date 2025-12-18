@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "soa:block/lunar_panel_top",
-    "side": "soa:block/lunar_panel_slab_side",
-    "top": "soa:block/lunar_panel_top"
-  }
-}
