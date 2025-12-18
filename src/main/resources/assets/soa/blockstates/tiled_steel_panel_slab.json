@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "soa:block/tiled_dark_panel_slab"
+      "model": "soa:block/tiled_steel_panel_slab"
     },
     "type=double": {
-      "model": "soa:block/tiled_dark_panel_slab_double"
+      "model": "soa:block/tiled_steel_panel_slab_double"
     },
     "type=top": {
-      "model": "soa:block/tiled_dark_panel_slab_top"
+      "model": "soa:block/tiled_steel_panel_slab_top"
     }
   }
 }

@@ -3,8 +3,8 @@
   "type": "base",
   "parent": "minecraft:block/slab_top",
   "textures": {
-    "bottom": "soa:block/lunar_panel_top",
-    "side": "soa:block/tiled_lunar_panel",
-    "top": "soa:block/lunar_panel_top"
+    "bottom": "soa:block/moon_rock_panel_top",
+    "side": "soa:block/moon_rock_panel_tiles",
+    "top": "soa:block/moon_rock_panel_top"
   }
 }

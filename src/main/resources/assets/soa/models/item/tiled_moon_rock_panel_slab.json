@@ -1,0 +1,10 @@
+{
+  "loader": "fusion:model",
+  "type": "base",
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "soa:block/moon_rock_panel_top",
+    "side": "soa:block/moon_rock_panel_tiles",
+    "top": "soa:block/moon_rock_panel_top"
+  }
+}

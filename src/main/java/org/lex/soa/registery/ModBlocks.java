@@ -16,22 +16,22 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Soa.MOD_ID);
 
-    public static final DeferredBlock<Block> DARK_PANEL = registerBlockWithItem("dark_panel",
+    public static final DeferredBlock<Block> DARK_PANEL = registerBlockWithItem("steel_panel",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.COPPER)
                     .strength(5f, 6f)
                     .requiresCorrectToolForDrops()));
 
-    public static final DeferredBlock<SlabBlock> DARK_PANEL_SLAB = registerBlockWithItem("dark_panel_slab",
+    public static final DeferredBlock<SlabBlock> DARK_PANEL_SLAB = registerBlockWithItem("steel_panel_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
 
-    public static final DeferredBlock<Block> TILED_DARK_PANEL = registerBlockWithItem("tiled_dark_panel",
+    public static final DeferredBlock<Block> TILED_DARK_PANEL = registerBlockWithItem("tiled_steel_panel",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
 
-    public static final DeferredBlock<SlabBlock> TILED_DARK_PANEL_SLAB = registerBlockWithItem("tiled_dark_panel_slab",
+    public static final DeferredBlock<SlabBlock> TILED_DARK_PANEL_SLAB = registerBlockWithItem("tiled_steel_panel_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
 
-    public static final DeferredBlock<DoublePanelBlock> DOUBLE_DARK_PANEL = registerBlockWithItem("double_dark_panel",
+    public static final DeferredBlock<DoublePanelBlock> DOUBLE_DARK_PANEL = registerBlockWithItem("double_steel_panel",
             () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
 
     /*
@@ -40,22 +40,22 @@ public class ModBlocks {
             () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
      */
 
-    public static final DeferredBlock<Block> LUNAR_PANEL = registerBlockWithItem("lunar_panel",
+    public static final DeferredBlock<Block> LUNAR_PANEL = registerBlockWithItem("moon_rock_panel",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.DEEPSLATE)
                     .strength(3f, 6f)
                     .requiresCorrectToolForDrops()));
 
-    public static final DeferredBlock<SlabBlock> LUNAR_PANEL_SLAB = registerBlockWithItem("lunar_panel_slab",
+    public static final DeferredBlock<SlabBlock> LUNAR_PANEL_SLAB = registerBlockWithItem("moon_rock_panel_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(LUNAR_PANEL.get())));
 
-    public static final DeferredBlock<Block> TILED_LUNAR_PANEL = registerBlockWithItem("tiled_lunar_panel",
+    public static final DeferredBlock<Block> TILED_LUNAR_PANEL = registerBlockWithItem("tiled_moon_rock_panel",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(LUNAR_PANEL.get())));
 
-    public static final DeferredBlock<SlabBlock> TILED_LUNAR_PANEL_SLAB = registerBlockWithItem("tiled_lunar_panel_slab",
+    public static final DeferredBlock<SlabBlock> TILED_LUNAR_PANEL_SLAB = registerBlockWithItem("tiled_moon_rock_panel_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(LUNAR_PANEL.get())));
 
-    public static final DeferredBlock<DoublePanelBlock> DOUBLE_LUNAR_PANEL = registerBlockWithItem("double_lunar_panel",
+    public static final DeferredBlock<DoublePanelBlock> DOUBLE_LUNAR_PANEL = registerBlockWithItem("double_moon_rock_panel",
             () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(LUNAR_PANEL.get())));
     
 

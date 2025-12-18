@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "soa:block/dark_panel_top",
-    "side": "soa:block/double_dark_panel_bottom"
+    "end": "soa:block/steel_panel_top",
+    "side": "soa:block/double_steel_panel_bottom"
   }
 }

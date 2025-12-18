@@ -3,7 +3,7 @@
   "type": "base",
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "soa:block/lunar_panel_top",
-    "side": "soa:block/lunar_panel_slab_side"
+    "end": "soa:block/moon_rock_panel_top",
+    "side": "soa:block/moon_rock_panel_slab_side"
   }
 }

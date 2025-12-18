@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "soa:block/lunar_panel_top",
-    "side": "soa:block/double_lunar_panel_top"
+    "end": "soa:block/moon_rock_panel_top",
+    "side": "soa:block/double_moon_rock_panel_top"
   }
 }

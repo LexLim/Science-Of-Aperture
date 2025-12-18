@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "soa:block/tiled_lunar_panel"
+      "model": "soa:block/tiled_moon_rock_panel"
     }
   }
 }

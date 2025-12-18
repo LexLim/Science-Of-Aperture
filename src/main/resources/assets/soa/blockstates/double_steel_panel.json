@@ -1,10 +1,10 @@
 {
   "variants": {
     "half=upper": {
-      "model": "soa:block/double_dark_panel_top"
+      "model": "soa:block/double_steel_panel_top"
     },
     "half=lower": {
-      "model": "soa:block/double_dark_panel_bottom"
+      "model": "soa:block/double_steel_panel_bottom"
     }
   }
 }

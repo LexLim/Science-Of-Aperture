@@ -1,10 +1,12 @@
 {
-  "block.soa.dark_panel": "Dark Panel",
-  "block.soa.dark_panel_slab": "Dark Panel Slab",
-  "block.soa.tiled_dark_panel": "Tiled Dark Panel",
-  "block.soa.tiled_dark_panel_slab": "Tiled Dark Panel Slab",
-  "block.soa.lunar_panel": "Lunar Panel",
-  "block.soa.lunar_panel_slab": "Lunar Panel Slab",
-  "block.soa.tiled_lunar_panel": "Tiled Lunar Panel",
-  "block.soa.tiled_lunar_panel_slab": "Tiled Lunar Panel Slab"
+  "block.soa.steel_panel": "Steel Panel",
+  "block.soa.steel_panel_slab": "Steel Panel Slab",
+  "block.soa.tiled_steel_panel": "Tiled Steel Panel",
+  "block.soa.tiled_steel_panel_slab": "Tiled Steel Panel Slab",
+  "block.soa.double_steel_panel": "Double Steel Panel",
+  "block.soa.moon_rock_panel": "Moon Rock Panel",
+  "block.soa.moon_rock_panel_slab": "Moon Rock Panel Slab",
+  "block.soa.tiled_moon_rock_panel": "Tiled Moon Rock Panel",
+  "block.soa.tiled_moon_rock_panel_slab": "Tiled Moon Rock Panel Slab",
+  "block.soa.double_moon_rock_panel": "Double Moon Rock Panel"
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "soa:block/dark_panel"
+      "model": "soa:block/steel_panel"
     }
   }
 }
