@@ -34,8 +34,11 @@ public class ModBlocks {
     public static final DeferredBlock<DoublePanelBlock> DOUBLE_DARK_PANEL = registerBlockWithItem("double_dark_panel",
             () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
 
+    /*
+    * test block to get default behaviour or DoublePanelBlock class
     public static final DeferredBlock<DoublePanelBlock> DOUBLE_TEST_PANEL = registerBlockWithItem("double_test_panel",
             () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
+     */
 
     public static final DeferredBlock<Block> LUNAR_PANEL = registerBlockWithItem("lunar_panel",
             () -> new Block(BlockBehaviour.Properties.of()

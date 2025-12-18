@@ -2,6 +2,7 @@ package org.lex.soa;
 
 import org.lex.soa.registery.ModBlocks;
 import org.lex.soa.registery.ModItems;
+import org.lex.soa.registery.SOACreativeTab;
 import org.slf4j.Logger;
 
 import net.neoforged.bus.api.IEventBus;
@@ -20,5 +21,6 @@ public class Soa {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        SOACreativeTab.register(eventBus);
     }
 }
