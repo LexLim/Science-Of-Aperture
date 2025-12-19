@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "soa:dark_panel_slab",
+                  "block": "soa:moon_rock_panel_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "soa:dark_panel_slab"
+          "name": "soa:moon_rock_panel_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soa:blocks/dark_panel_slab"
+  "random_sequence": "soa:blocks/moon_rock_panel_slab"
 }

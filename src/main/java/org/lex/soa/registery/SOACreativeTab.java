@@ -18,10 +18,11 @@ public class SOACreativeTab {
                 DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Soa.MOD_ID);
 
         public static final Supplier<CreativeModeTab> MAIN_TAB = CREATIVE_MODE_TAB.register("soa_main_tab",
-                () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.END_CRYSTAL))
+                () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STEEL_INGOT.get()))
                         .title(Component.literal("SOA content"))
                         .displayItems((pParameters, pOutput) -> {
                             //pOutput.accept(ModItems.PLACHOLDER_ITEM.get());
+                            pOutput.accept(ModItems.STEEL_INGOT.get());
 
                             ModBlocks.BLOCKS.getEntries().forEach(
                                     (block ) -> {

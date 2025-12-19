@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "soa:tiled_dark_panel_slab",
+                  "block": "soa:steel_panel_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "soa:tiled_dark_panel_slab"
+          "name": "soa:steel_panel_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soa:blocks/tiled_dark_panel_slab"
+  "random_sequence": "soa:blocks/steel_panel_slab"
 }

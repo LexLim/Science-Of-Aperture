@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "soa:tiled_dark_panel"
+          "name": "soa:steel_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soa:blocks/tiled_dark_panel"
+  "random_sequence": "soa:blocks/steel_block"
 }

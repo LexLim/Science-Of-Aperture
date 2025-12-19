@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "soa:lunar_panel_slab",
+                  "block": "soa:tiled_steel_panel_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "soa:lunar_panel_slab"
+          "name": "soa:tiled_steel_panel_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soa:blocks/lunar_panel_slab"
+  "random_sequence": "soa:blocks/tiled_steel_panel_slab"
 }

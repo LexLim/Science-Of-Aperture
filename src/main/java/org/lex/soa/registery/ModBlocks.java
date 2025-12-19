@@ -16,6 +16,12 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Soa.MOD_ID);
 
+    public static final DeferredBlock<Block> STEEL_BLOCK = registerBlockWithItem("steel_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.NETHERITE_BLOCK)
+                    .strength(6f, 5f)
+                    .requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> DARK_PANEL = registerBlockWithItem("steel_panel",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.COPPER)

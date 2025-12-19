@@ -1,11 +1,12 @@
-// 1.21.1	2025-11-10T18:43:18.5170951	Loot Tables
-940364d92e54981e950a793b16ff7787f91d0cc1 data/soa/loot_table/blocks/dark_panel.json
-c4e3c469aa1dbc179cc5c4ea9eead7e0c32f8f5e data/soa/loot_table/blocks/dark_panel_slab.json
-0634fcea4dd82d784ac95a55c4d1427dc2a6d7a3 data/soa/loot_table/blocks/double_dark_panel.json
-5495c3c2050debffdc153e5e6fbda002126b44f9 data/soa/loot_table/blocks/double_lunar_panel.json
-38f1484fa9544178e17127e974db7fdf023bf3cb data/soa/loot_table/blocks/lunar_panel.json
-46e26673225967a22565df894a49b9eb87396c2a data/soa/loot_table/blocks/lunar_panel_slab.json
-d9615ea51df8d71c86a1a047111bf35a8cfaf583 data/soa/loot_table/blocks/tiled_dark_panel.json
-3ef927fbef237dd6756f951c2b73b21392f29ef1 data/soa/loot_table/blocks/tiled_dark_panel_slab.json
-98ebb4b31568fb15b6ceaa7caaed89c48d4fe550 data/soa/loot_table/blocks/tiled_lunar_panel.json
-b5af5cdba70c1fb7e40f70496dd278a1f65c2844 data/soa/loot_table/blocks/tiled_lunar_panel_slab.json
+// 1.21.1	2025-12-19T20:30:52.9865263	Loot Tables
+38308a230c49907a40fd76720edec6aa4b1e3e43 data/soa/loot_table/blocks/double_moon_rock_panel.json
+f0441c6825beb2302a0b65e9b9bb9a7e03f1477b data/soa/loot_table/blocks/double_steel_panel.json
+b6cdf227715f2224871696c4bb99db89edf4c26c data/soa/loot_table/blocks/moon_rock_panel.json
+ed2cb8be12110646e5b46a1e41590ef7b18535af data/soa/loot_table/blocks/moon_rock_panel_slab.json
+2b0f85ec5c95aed3c3c714ea0df277ddd7892104 data/soa/loot_table/blocks/steel_block.json
+383deaa3c32aae9d0481ffaeff712df2a4e938ac data/soa/loot_table/blocks/steel_panel.json
+3146004bafe1dd98a93241dca1bcd61f01290576 data/soa/loot_table/blocks/steel_panel_slab.json
+a956ade83594c1a4661247f0afc88418645c07ff data/soa/loot_table/blocks/tiled_moon_rock_panel.json
+2690612aefd0f1e06505726503a24f76a84de301 data/soa/loot_table/blocks/tiled_moon_rock_panel_slab.json
+97eada13ef9f22e9a02442a1245734e94f64a3d9 data/soa/loot_table/blocks/tiled_steel_panel.json
+0f6a46f90e2f97797ea1f750ed33c776eba63557 data/soa/loot_table/blocks/tiled_steel_panel_slab.json

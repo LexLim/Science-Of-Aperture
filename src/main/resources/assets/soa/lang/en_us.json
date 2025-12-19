@@ -1,4 +1,5 @@
 {
+  "block.soa.steel_block": "Block Of Steel",
   "block.soa.steel_panel": "Steel Panel",
   "block.soa.steel_panel_slab": "Steel Panel Slab",
   "block.soa.tiled_steel_panel": "Tiled Steel Panel",
@@ -8,5 +9,6 @@
   "block.soa.moon_rock_panel_slab": "Moon Rock Panel Slab",
   "block.soa.tiled_moon_rock_panel": "Tiled Moon Rock Panel",
   "block.soa.tiled_moon_rock_panel_slab": "Tiled Moon Rock Panel Slab",
-  "block.soa.double_moon_rock_panel": "Double Moon Rock Panel"
+  "block.soa.double_moon_rock_panel": "Double Moon Rock Panel",
+  "item.soa.steel_ingot": "Steel Ingot"
 }

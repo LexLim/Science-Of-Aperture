@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "soa:dark_panel"
+          "name": "soa:double_moon_rock_panel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soa:blocks/dark_panel"
+  "random_sequence": "soa:blocks/double_moon_rock_panel"
 }

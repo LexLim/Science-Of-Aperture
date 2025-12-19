@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "soa:lunar_panel"
+          "name": "soa:moon_rock_panel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soa:blocks/lunar_panel"
+  "random_sequence": "soa:blocks/moon_rock_panel"
 }

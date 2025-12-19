@@ -1,14 +1,15 @@
 {
   "values": [
-    "soa:dark_panel",
-    "soa:dark_panel_slab",
-    "soa:tiled_dark_panel",
-    "soa:tiled_dark_panel_slab",
-    "soa:double_dark_panel",
-    "soa:lunar_panel",
-    "soa:lunar_panel_slab",
-    "soa:tiled_lunar_panel",
-    "soa:tiled_lunar_panel_slab",
-    "soa:double_lunar_panel"
+    "soa:steel_block",
+    "soa:steel_panel",
+    "soa:steel_panel_slab",
+    "soa:tiled_steel_panel",
+    "soa:tiled_steel_panel_slab",
+    "soa:double_steel_panel",
+    "soa:moon_rock_panel",
+    "soa:moon_rock_panel_slab",
+    "soa:tiled_moon_rock_panel",
+    "soa:tiled_moon_rock_panel_slab",
+    "soa:double_moon_rock_panel"
   ]
 }
