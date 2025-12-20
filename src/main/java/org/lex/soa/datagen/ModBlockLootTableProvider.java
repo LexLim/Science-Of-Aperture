@@ -20,6 +20,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CUT_STEEL_BLOCK.get());
         dropSelf(ModBlocks.CUT_STEEL_STAIRS.get());
         dropSelf(ModBlocks.CUT_STEEL_SLAB.get());
+        dropSelf(ModBlocks.STEEL_GRATE.get());
+        add(ModBlocks.STEEL_DOOR.get(),
+                block -> createDoorTable(ModBlocks.STEEL_DOOR.get()));
+        dropSelf(ModBlocks.STEEL_TRAPDOOR.get());
         dropSelf(ModBlocks.DARK_PANEL.get());
         add(ModBlocks.DARK_PANEL_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.DARK_PANEL_SLAB.get()));

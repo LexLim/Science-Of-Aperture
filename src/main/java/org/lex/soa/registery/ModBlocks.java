@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -30,6 +31,15 @@ public class ModBlocks {
 
     public static final DeferredBlock<SlabBlock> CUT_STEEL_SLAB = registerBlockWithItem("cut_steel_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
+
+    public static final DeferredBlock<TransparentBlock> STEEL_GRATE = registerBlockWithItem("steel_grate",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get()).noOcclusion()));
+
+    public static final DeferredBlock<DoorBlock> STEEL_DOOR = registerBlockWithItem("steel_door",
+            () -> new DoorBlock(BlockSetType.COPPER,BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
+
+    public static final DeferredBlock<TrapDoorBlock> STEEL_TRAPDOOR = registerBlockWithItem("steel_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.COPPER,BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
 
     public static final DeferredBlock<Block> DARK_PANEL = registerBlockWithItem("steel_panel",
             () -> new Block(BlockBehaviour.Properties.of()

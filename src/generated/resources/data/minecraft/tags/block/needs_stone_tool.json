@@ -1,5 +1,12 @@
 {
   "values": [
+    "soa:steel_block",
+    "soa:cut_steel_block",
+    "soa:cut_steel_stairs",
+    "soa:cut_steel_slab",
+    "soa:steel_grate",
+    "soa:steel_door",
+    "soa:steel_trapdoor",
     "soa:moon_rock_panel",
     "soa:moon_rock_panel_slab",
     "soa:tiled_moon_rock_panel",

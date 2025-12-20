@@ -1,8 +1,8 @@
 package org.lex.soa.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -17,9 +17,16 @@ public class ModBlockstateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        blockWithItem(ModBlocks.STEEL_BLOCK);
+        blockWithItem(ModBlocks.CUT_STEEL_BLOCK);
+        stairsBlock(ModBlocks.CUT_STEEL_STAIRS.get(), blockTexture(ModBlocks.CUT_STEEL_STAIRS.get()));
+        slabBlock(ModBlocks.CUT_STEEL_SLAB.get(), blockTexture(ModBlocks.CUT_STEEL_SLAB.get()), blockTexture(ModBlocks.CUT_STEEL_SLAB.get()));
+        blockWithItem(ModBlocks.STEEL_GRATE);
+        doorBlock(ModBlocks.STEEL_DOOR.get(), blockTexture(ModBlocks.STEEL_DOOR.get()), blockTexture(ModBlocks.STEEL_DOOR.get()));
+        trapdoorBlock(ModBlocks.STEEL_TRAPDOOR.get(), blockTexture(ModBlocks.STEEL_DOOR.get()), true);
         logBlock((RotatedPillarBlock) ModBlocks.DARK_PANEL.get());
         slabBlock(ModBlocks.DARK_PANEL_SLAB.get(), blockTexture(ModBlocks.DARK_PANEL_SLAB.get()), blockTexture(ModBlocks.DARK_PANEL_SLAB.get()));
-        blockWithItem(ModBlocks.TILED_DARK_PANEL);
+        logBlock((RotatedPillarBlock) ModBlocks.TILED_DARK_PANEL.get());
         slabBlock(ModBlocks.TILED_DARK_PANEL_SLAB.get(), blockTexture(ModBlocks.TILED_DARK_PANEL.get()), blockTexture(ModBlocks.TILED_DARK_PANEL.get()));
         logBlock((RotatedPillarBlock) ModBlocks.LUNAR_PANEL.get());
         slabBlock(ModBlocks.LUNAR_PANEL_SLAB.get(), blockTexture(ModBlocks.LUNAR_PANEL_SLAB.get()), blockTexture(ModBlocks.LUNAR_PANEL_SLAB.get()));

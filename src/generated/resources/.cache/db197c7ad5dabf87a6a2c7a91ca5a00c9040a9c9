@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-20T13:56:54.425844	Tags for minecraft:block mod id soa
-fb0d9c9d98a2d7cdda2cb7f802e85deb5e876516 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21.1	2025-12-20T21:55:52.102458	Tags for minecraft:block mod id soa
+c061445bdd9930ce1078e3557837dad1c001f5df data/minecraft/tags/block/mineable/pickaxe.json
 b19d1aafc5408ea2edea1fe6da642b06397ec1af data/minecraft/tags/block/needs_iron_tool.json
-00ecfa78c264642f5158a8eafbe6c22e78a5471f data/minecraft/tags/block/needs_stone_tool.json
+aa1e48b6fffd253b63468c2f765c5258a49c4be0 data/minecraft/tags/block/needs_stone_tool.json

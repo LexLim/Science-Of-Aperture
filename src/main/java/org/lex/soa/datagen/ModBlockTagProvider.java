@@ -23,6 +23,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.CUT_STEEL_BLOCK.get())
                 .add(ModBlocks.CUT_STEEL_STAIRS.get())
                 .add(ModBlocks.CUT_STEEL_SLAB.get())
+                .add(ModBlocks.STEEL_GRATE.get())
+                .add(ModBlocks.STEEL_DOOR.get())
+                .add(ModBlocks.STEEL_TRAPDOOR.get())
                 .add(ModBlocks.DARK_PANEL.get())
                 .add(ModBlocks.DARK_PANEL_SLAB.get())
                 .add(ModBlocks.TILED_DARK_PANEL.get())
@@ -42,6 +45,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DOUBLE_DARK_PANEL.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.STEEL_BLOCK.get())
+                .add(ModBlocks.CUT_STEEL_BLOCK.get())
+                .add(ModBlocks.CUT_STEEL_STAIRS.get())
+                .add(ModBlocks.CUT_STEEL_SLAB.get())
+                .add(ModBlocks.STEEL_GRATE.get())
+                .add(ModBlocks.STEEL_DOOR.get())
+                .add(ModBlocks.STEEL_TRAPDOOR.get())
                 .add(ModBlocks.LUNAR_PANEL.get())
                 .add(ModBlocks.LUNAR_PANEL_SLAB.get())
                 .add(ModBlocks.TILED_LUNAR_PANEL.get())
