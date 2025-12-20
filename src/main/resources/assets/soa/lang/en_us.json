@@ -1,5 +1,8 @@
 {
   "block.soa.steel_block": "Block Of Steel",
+  "block.soa.cut_steel_block": "Cut Steel Block",
+  "block.soa.cut_steel_stairs": "Cut Steel Stairs",
+  "block.soa.cut_steel_slab": "Cut Steel Slab",
   "block.soa.steel_panel": "Steel Panel",
   "block.soa.steel_panel_slab": "Steel Panel Slab",
   "block.soa.tiled_steel_panel": "Tiled Steel Panel",

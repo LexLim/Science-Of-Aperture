@@ -17,6 +17,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.STEEL_BLOCK.get());
+        dropSelf(ModBlocks.CUT_STEEL_BLOCK.get());
+        dropSelf(ModBlocks.CUT_STEEL_STAIRS.get());
+        dropSelf(ModBlocks.CUT_STEEL_SLAB.get());
         dropSelf(ModBlocks.DARK_PANEL.get());
         add(ModBlocks.DARK_PANEL_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.DARK_PANEL_SLAB.get()));

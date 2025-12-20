@@ -1,4 +1,7 @@
-// 1.21.1	2025-12-19T20:30:52.9865263	Loot Tables
+// 1.21.1	2025-12-20T13:56:54.4268435	Loot Tables
+b8df2dd9a6358e004a1f5f0e6f695b91db014372 data/soa/loot_table/blocks/cut_steel_block.json
+aefa802c2f6b03cbd41cd53d6b97daa6e7702ef1 data/soa/loot_table/blocks/cut_steel_slab.json
+f620d92061b25d04df9dac0c0b976081db08c32d data/soa/loot_table/blocks/cut_steel_stairs.json
 38308a230c49907a40fd76720edec6aa4b1e3e43 data/soa/loot_table/blocks/double_moon_rock_panel.json
 f0441c6825beb2302a0b65e9b9bb9a7e03f1477b data/soa/loot_table/blocks/double_steel_panel.json
 b6cdf227715f2224871696c4bb99db89edf4c26c data/soa/loot_table/blocks/moon_rock_panel.json

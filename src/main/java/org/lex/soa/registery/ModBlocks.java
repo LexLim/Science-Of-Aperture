@@ -22,6 +22,15 @@ public class ModBlocks {
                     .strength(6f, 5f)
                     .requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> CUT_STEEL_BLOCK = registerBlockWithItem("cut_steel_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
+
+    public static final DeferredBlock<StairBlock> CUT_STEEL_STAIRS = registerBlockWithItem("cut_steel_stairs",
+            () -> new StairBlock(ModBlocks.STEEL_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
+
+    public static final DeferredBlock<SlabBlock> CUT_STEEL_SLAB = registerBlockWithItem("cut_steel_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
+
     public static final DeferredBlock<Block> DARK_PANEL = registerBlockWithItem("steel_panel",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.COPPER)

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "soa:block/cut_steel_slab"
+    },
+    "type=double": {
+      "model": "soa:block/cut_steel_slab_double"
+    },
+    "type=top": {
+      "model": "soa:block/cut_steel_slab_top"
+    }
+  }
+}

@@ -20,6 +20,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.STEEL_BLOCK.get())
+                .add(ModBlocks.CUT_STEEL_BLOCK.get())
+                .add(ModBlocks.CUT_STEEL_STAIRS.get())
+                .add(ModBlocks.CUT_STEEL_SLAB.get())
                 .add(ModBlocks.DARK_PANEL.get())
                 .add(ModBlocks.DARK_PANEL_SLAB.get())
                 .add(ModBlocks.TILED_DARK_PANEL.get())

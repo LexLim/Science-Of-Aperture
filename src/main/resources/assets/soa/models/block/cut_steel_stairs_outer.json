@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "soa:block/cut_steel_block",
+    "side": "soa:block/cut_steel_block",
+    "top": "soa:block/cut_steel_block"
+  }
+}
