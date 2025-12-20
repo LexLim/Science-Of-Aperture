@@ -16,7 +16,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = Soa.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = Soa.MOD_ID)
+//bus parameter is now depreciated, so we dont need it
 public class DataGenerators {
 
     @SubscribeEvent

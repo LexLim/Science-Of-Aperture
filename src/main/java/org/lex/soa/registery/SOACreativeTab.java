@@ -22,13 +22,19 @@ public class SOACreativeTab {
                         .title(Component.literal("SOA content"))
                         .displayItems((pParameters, pOutput) -> {
                             //pOutput.accept(ModItems.PLACHOLDER_ITEM.get());
-                            pOutput.accept(ModItems.STEEL_INGOT.get());
+
+                            ModItems.ITEMS.getEntries().forEach(
+                                    (block ) -> {
+                                        pOutput.accept(block.get().asItem());
+                                    }
+                            );
 
                             ModBlocks.BLOCKS.getEntries().forEach(
                                     (block ) -> {
                                         pOutput.accept(block.get().asItem());
                                     }
                             );
+
                         })
                         .build());
 
