@@ -38,6 +38,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.TILED_LUNAR_PANEL_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.TILED_LUNAR_PANEL_SLAB.get()));
         dropSelf(ModBlocks.DOUBLE_LUNAR_PANEL.get());
+        dropSelf(ModBlocks.COLD_WOODEN_PANEL.get());
+        dropSelf(ModBlocks.FRAMED_COLD_WOODEN_PANEL.get());
+        dropSelf(ModBlocks.DOUBLE_COLD_WOODEN_PANEL.get());
+        dropSelf(ModBlocks.LUSH_WOODEN_PANEL.get());
+        dropSelf(ModBlocks.FRAMED_LUSH_WOODEN_PANEL.get());
+        dropSelf(ModBlocks.DOUBLE_LUSH_WOODEN_PANEL.get());
+        dropSelf(ModBlocks.COATED_WOODEN_PANEL.get());
+        dropSelf(ModBlocks.COATED_WOODEN_PANEL_SIGNAL.get());
 
     }
 

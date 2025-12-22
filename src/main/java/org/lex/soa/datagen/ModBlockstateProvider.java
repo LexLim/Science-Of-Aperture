@@ -32,6 +32,12 @@ public class ModBlockstateProvider extends BlockStateProvider {
         slabBlock(ModBlocks.LUNAR_PANEL_SLAB.get(), blockTexture(ModBlocks.LUNAR_PANEL_SLAB.get()), blockTexture(ModBlocks.LUNAR_PANEL_SLAB.get()));
         blockWithItem(ModBlocks.TILED_LUNAR_PANEL);
         slabBlock(ModBlocks.TILED_LUNAR_PANEL_SLAB.get(), blockTexture(ModBlocks.TILED_LUNAR_PANEL.get()), blockTexture(ModBlocks.TILED_LUNAR_PANEL.get()));
+        logBlock((RotatedPillarBlock) ModBlocks.COLD_WOODEN_PANEL.get());
+        logBlock((RotatedPillarBlock) ModBlocks.FRAMED_COLD_WOODEN_PANEL.get());
+        logBlock((RotatedPillarBlock) ModBlocks.LUSH_WOODEN_PANEL.get());
+        logBlock((RotatedPillarBlock) ModBlocks.FRAMED_LUSH_WOODEN_PANEL.get());
+        blockWithItem(ModBlocks.COATED_WOODEN_PANEL);
+        blockWithItem(ModBlocks.COATED_WOODEN_PANEL_SIGNAL);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

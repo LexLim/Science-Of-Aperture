@@ -82,7 +82,40 @@ public class ModBlocks {
 
     public static final DeferredBlock<DoublePanelBlock> DOUBLE_LUNAR_PANEL = registerBlockWithItem("double_moon_rock_panel",
             () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(LUNAR_PANEL.get())));
-    
+
+    public static final DeferredBlock<Block> COLD_WOODEN_PANEL = registerBlockWithItem("cold_wooden_panel",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .strength(2f, 3f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> FRAMED_COLD_WOODEN_PANEL = registerBlockWithItem("framed_cold_wooden_panel",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(COLD_WOODEN_PANEL.get())));
+
+    public static final DeferredBlock<DoublePanelBlock> DOUBLE_COLD_WOODEN_PANEL = registerBlockWithItem("double_cold_wooden_panel",
+            () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(COLD_WOODEN_PANEL.get())));
+
+    public static final DeferredBlock<Block> LUSH_WOODEN_PANEL = registerBlockWithItem("lush_wooden_panel",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .strength(1.4f, 2.8f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> FRAMED_LUSH_WOODEN_PANEL = registerBlockWithItem("framed_lush_wooden_panel",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(LUSH_WOODEN_PANEL.get())));
+
+    public static final DeferredBlock<DoublePanelBlock> DOUBLE_LUSH_WOODEN_PANEL = registerBlockWithItem("double_lush_wooden_panel",
+            () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(LUSH_WOODEN_PANEL.get())));
+
+    public static final DeferredBlock<Block> COATED_WOODEN_PANEL = registerBlockWithItem("coated_wooden_panel",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .strength(2.5f, 2.5f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> COATED_WOODEN_PANEL_SIGNAL = registerBlockWithItem("coated_wooden_panel_signal",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(COATED_WOODEN_PANEL.get())));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlockWithItem(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,9 @@
+{
+  "loader": "fusion:model",
+  "type": "base",
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "soa:block/wooden_panel_top",
+    "side": "soa:block/framed_cold_wooden_panel"
+  }
+}

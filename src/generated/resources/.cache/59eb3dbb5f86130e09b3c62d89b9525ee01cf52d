@@ -1,9 +1,17 @@
-// 1.21.1	2025-12-20T21:21:24.9796266	Loot Tables
+// 1.21.1	2025-12-22T12:20:39.281773	Loot Tables
+815cac9ebb35e5b78fbe778cb0469a58f653107c data/soa/loot_table/blocks/coated_wooden_panel.json
+e842c74940d49094222802e5960fb4a6707ee5b4 data/soa/loot_table/blocks/coated_wooden_panel_signal.json
+89b10a1610029fb47b4143d8601c2b98ac3c257a data/soa/loot_table/blocks/cold_wooden_panel.json
 b8df2dd9a6358e004a1f5f0e6f695b91db014372 data/soa/loot_table/blocks/cut_steel_block.json
 aefa802c2f6b03cbd41cd53d6b97daa6e7702ef1 data/soa/loot_table/blocks/cut_steel_slab.json
 f620d92061b25d04df9dac0c0b976081db08c32d data/soa/loot_table/blocks/cut_steel_stairs.json
+1033426b474122dcb1a88258231719834e9fc83e data/soa/loot_table/blocks/double_cold_wooden_panel.json
+9cf0c1721c0ac3816409c479684d0df1fbb58adc data/soa/loot_table/blocks/double_lush_wooden_panel.json
 38308a230c49907a40fd76720edec6aa4b1e3e43 data/soa/loot_table/blocks/double_moon_rock_panel.json
 f0441c6825beb2302a0b65e9b9bb9a7e03f1477b data/soa/loot_table/blocks/double_steel_panel.json
+c5a82542dba512e180dd84b978837dfb881d11e0 data/soa/loot_table/blocks/framed_cold_wooden_panel.json
+80aa92e6d00330fa2ab896b0c51a6bf334d85b6c data/soa/loot_table/blocks/framed_lush_wooden_panel.json
+491351eda3556325782a367c3ef7b22a8b34edce data/soa/loot_table/blocks/lush_wooden_panel.json
 b6cdf227715f2224871696c4bb99db89edf4c26c data/soa/loot_table/blocks/moon_rock_panel.json
 ed2cb8be12110646e5b46a1e41590ef7b18535af data/soa/loot_table/blocks/moon_rock_panel_slab.json
 2b0f85ec5c95aed3c3c714ea0df277ddd7892104 data/soa/loot_table/blocks/steel_block.json
