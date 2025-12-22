@@ -1,6 +1,8 @@
 package org.lex.soa.registery;
 
+import net.minecraft.world.item.HangingEntityItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemFrameItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -19,7 +21,6 @@ public class ModItems {
 
     public static final DeferredItem<Item> PROTOGUN = ITEMS.register("proto_gun",
             () -> new ProtoGun(new Item.Properties()));
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

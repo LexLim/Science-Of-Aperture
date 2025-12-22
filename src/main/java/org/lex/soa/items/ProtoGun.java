@@ -1,12 +1,14 @@
 package org.lex.soa.items;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.decoration.ItemFrame;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Spider;
 import net.minecraft.world.entity.player.Player;
@@ -20,9 +22,13 @@ import net.minecraft.world.level.ClipContext.Fluid;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import org.lex.soa.Soa;
+import org.lex.soa.entity.ProtoPortal;
+import org.lex.soa.networking.SoaMessages;
+import org.lex.soa.networking.packets.ShootPacket;
 
 
 public class ProtoGun extends Item {
@@ -41,6 +47,10 @@ public class ProtoGun extends Item {
     public InteractionResultHolder<ItemStack> shoot(Level world, Player player, InteractionHand hand, Boolean left) {
         ItemStack item = player.getItemInHand(hand);
 
+        if (world.isClientSide) {
+            return new InteractionResultHolder<>(InteractionResult.FAIL, item);
+        }
+
         // Raytrace - Find the target
         Vec3 start = player.position()
                 .add(0, player.getEyeHeight(), 0);
@@ -48,8 +58,8 @@ public class ProtoGun extends Item {
                 .scale(64);
         BlockHitResult raytrace =
                 world.clip(new ClipContext(start, start.add(range), Block.OUTLINE, Fluid.NONE, player));
-        BlockPos pos = raytrace.getBlockPos();
-        BlockState stateReplaced = world.getBlockState(pos);
+        BlockPos pos = raytrace.getBlockPos().relative(raytrace.getDirection());
+        BlockState stateReplaced = world.getBlockState(raytrace.getBlockPos());
 
 
         // No target
@@ -57,25 +67,33 @@ public class ProtoGun extends Item {
             return new InteractionResultHolder<>(InteractionResult.CONSUME, item);
         }
 
-        // Client side
-        if (world.isClientSide) {
-            return new InteractionResultHolder<>(InteractionResult.CONSUME, item);
-        }
-
         // Server side
-        // todo: turn this into a packet and send to client
-        if (left) {
-            Creeper mob = EntityType.CREEPER.create(world);
-            if (mob != null) {
-                mob.moveTo(pos.getX(), pos.getY() + 2, pos.getZ(), 0.0F, 0.0F);
-                world.addFreshEntity(mob);
-            }
+        // TODO: do the animation and segment shooting
+        SoaMessages.fuckingAnnounce(
+                new ShootPacket.ClientboundAnimatePortalPacket(
+                        new CompoundTag()
+                ),
+                player
+        );
 
+
+        if (left) {
+            ProtoPortal pp = new ProtoPortal(world, pos, raytrace.getDirection());
+
+            if (pp!= null) {
+                pp.playPlacementSound();
+
+                //mob.moveTo(pos.getX(), pos.getY() + 2, pos.getZ(), 0.0F, 0.0F);
+                world.addFreshEntity(pp);
+            }
         } else {
-            Spider mob = EntityType.SPIDER.create(world);
-            if (mob != null) {
-                mob.moveTo(pos.getX(), pos.getY() + 2, pos.getZ(), 0.0F, 0.0F);
-                world.addFreshEntity(mob);
+            ProtoPortal pp = new ProtoPortal(world, pos, raytrace.getDirection());
+
+            if (pp!= null) {
+                pp.playPlacementSound();
+
+                //mob.moveTo(pos.getX(), pos.getY() + 2, pos.getZ(), 0.0F, 0.0F);
+                world.addFreshEntity(pp);
             }
         }
 

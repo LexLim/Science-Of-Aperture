@@ -9,6 +9,12 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.network.registration.HandlerThread;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
+import org.lex.soa.networking.ClientPayloadHandler;
+import org.lex.soa.networking.SoaMessages;
+import org.lex.soa.registery.SoaEntities;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = Soa.MOD_ID, dist = Dist.CLIENT)
@@ -24,8 +30,14 @@ public class SoaClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
-        Soa.LOGGER.info("HELLO FROM CLIENT SETUP");
-        Soa.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        SoaEntities.registerEntityRenderers();
+
     }
+    @SubscribeEvent
+    public static void register(RegisterPayloadHandlersEvent event) {
+        final PayloadRegistrar registrar = event.registrar("1").executesOn(HandlerThread.NETWORK);
+        SoaMessages.register(registrar);
+
+    }
+
 }
