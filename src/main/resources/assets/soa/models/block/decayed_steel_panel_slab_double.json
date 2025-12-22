@@ -1,0 +1,9 @@
+{
+  "loader": "fusion:model",
+  "type": "base",
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "soa:block/decayed_steel_panel_top",
+    "side": "soa:block/decayed_steel_panel_slab_side"
+  }
+}

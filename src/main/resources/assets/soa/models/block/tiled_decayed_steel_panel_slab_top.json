@@ -1,0 +1,10 @@
+{
+  "loader": "fusion:model",
+  "type": "base",
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "soa:block/decayed_steel_panel_top",
+    "side": "soa:block/decayed_steel_panel_tiles",
+    "top": "soa:block/decayed_steel_panel_top"
+  }
+}

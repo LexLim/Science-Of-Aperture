@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "soa:block/double_decayed_steel_panel_top"
+    },
+    "half=lower": {
+      "model": "soa:block/double_decayed_steel_panel_bottom"
+    }
+  }
+}
