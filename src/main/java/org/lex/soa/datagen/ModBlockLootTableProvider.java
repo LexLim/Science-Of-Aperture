@@ -31,6 +31,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.TILED_DARK_PANEL_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.TILED_DARK_PANEL_SLAB.get()));
         dropSelf(ModBlocks.DOUBLE_DARK_PANEL.get());
+        dropSelf(ModBlocks.DECAYED_DARK_PANEL.get());
+        add(ModBlocks.DECAYED_DARK_PANEL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.DECAYED_DARK_PANEL_SLAB.get()));
+        dropSelf(ModBlocks.TILED_DECAYED_DARK_PANEL.get());
+        add(ModBlocks.TILED_DECAYED_DARK_PANEL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.TILED_DECAYED_DARK_PANEL_SLAB.get()));
+        dropSelf(ModBlocks.DOUBLE_DECAYED_DARK_PANEL.get());
         dropSelf(ModBlocks.LUNAR_PANEL.get());
         add(ModBlocks.LUNAR_PANEL_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.LUNAR_PANEL_SLAB.get()));
@@ -38,6 +45,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.TILED_LUNAR_PANEL_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.TILED_LUNAR_PANEL_SLAB.get()));
         dropSelf(ModBlocks.DOUBLE_LUNAR_PANEL.get());
+        dropSelf(ModBlocks.OVERGROWN_LUNAR_PANEL.get());
+        add(ModBlocks.OVERGROWN_LUNAR_PANEL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.OVERGROWN_LUNAR_PANEL_SLAB.get()));
+        dropSelf(ModBlocks.TILED_OVERGROWN_LUNAR_PANEL.get());
+        add(ModBlocks.TILED_OVERGROWN_LUNAR_PANEL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.TILED_OVERGROWN_LUNAR_PANEL_SLAB.get()));
+        dropSelf(ModBlocks.DOUBLE_OVERGROWN_LUNAR_PANEL.get());
         dropSelf(ModBlocks.COLD_WOODEN_PANEL.get());
         dropSelf(ModBlocks.FRAMED_COLD_WOODEN_PANEL.get());
         dropSelf(ModBlocks.DOUBLE_COLD_WOODEN_PANEL.get());
@@ -46,6 +60,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DOUBLE_LUSH_WOODEN_PANEL.get());
         dropSelf(ModBlocks.COATED_WOODEN_PANEL.get());
         dropSelf(ModBlocks.COATED_WOODEN_PANEL_SIGNAL.get());
+        dropSelf(ModBlocks.PITCH_FRAMED_PADDING.get());
+        dropSelf(ModBlocks.DARK_FRAMED_PADDING.get());
+        dropSelf(ModBlocks.CLOUDY_FRAMED_PADDING.get());
+        dropSelf(ModBlocks.BRIGHT_FRAMED_PADDING.get());
+        dropSelf(ModBlocks.FRAMED_CARBONITE.get());
+        dropSelf(ModBlocks.PACKED_FRAMED_CARBONITE.get());
 
     }
 

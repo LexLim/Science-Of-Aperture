@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "soa:block/overgrown_moon_rock_panel_slab"
+    },
+    "type=double": {
+      "model": "soa:block/overgrown_moon_rock_panel_slab_double"
+    },
+    "type=top": {
+      "model": "soa:block/overgrown_moon_rock_panel_slab_top"
+    }
+  }
+}

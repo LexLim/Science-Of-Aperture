@@ -1,0 +1,12 @@
+{
+  "values": [
+    "soa:cold_wooden_panel",
+    "soa:framed_cold_wooden_panel",
+    "soa:double_cold_wooden_panel",
+    "soa:lush_wooden_panel",
+    "soa:framed_lush_wooden_panel",
+    "soa:double_lush_wooden_panel",
+    "soa:coated_wooden_panel",
+    "soa:coated_wooden_panel_signal"
+  ]
+}

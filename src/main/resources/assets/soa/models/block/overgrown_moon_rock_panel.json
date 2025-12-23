@@ -1,0 +1,9 @@
+{
+  "loader": "fusion:model",
+  "type": "base",
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "soa:block/overgrown_moon_rock_panel_top",
+    "side": "soa:block/overgrown_moon_rock_panel"
+  }
+}

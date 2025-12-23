@@ -11,6 +11,8 @@
     "soa:moon_rock_panel_slab",
     "soa:tiled_moon_rock_panel",
     "soa:tiled_moon_rock_panel_slab",
-    "soa:double_moon_rock_panel"
+    "soa:double_moon_rock_panel",
+    "soa:framed_carbonite",
+    "soa:packed_framed_carbonite"
   ]
 }
