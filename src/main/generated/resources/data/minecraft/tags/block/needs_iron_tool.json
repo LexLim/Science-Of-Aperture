@@ -1,0 +1,9 @@
+{
+  "values": [
+    "soa:steel_panel",
+    "soa:steel_panel_slab",
+    "soa:tiled_steel_panel",
+    "soa:tiled_steel_panel_slab",
+    "soa:double_steel_panel"
+  ]
+}

@@ -27,11 +27,9 @@
     "soa:tiled_overgrown_moon_rock_panel",
     "soa:tiled_overgrown_moon_rock_panel_slab",
     "soa:double_overgrown_moon_rock_panel",
-    "soa:pitch_framed_padding",
-    "soa:dark_framed_padding",
-    "soa:cloudy_framed_padding",
-    "soa:bright_framed_padding",
-    "soa:framed_carbonite",
-    "soa:packed_framed_carbonite"
+    "soa:pitch_framed_panel",
+    "soa:dark_framed_panel",
+    "soa:cloudy_framed_panel",
+    "soa:bright_framed_panel"
   ]
 }

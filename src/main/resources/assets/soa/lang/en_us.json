@@ -34,6 +34,12 @@
   "block.soa.double_lush_wooden_panel": "Double Lush Wooden Panel",
   "block.soa.coated_wooden_panel": "Coated Wooden Panel",
   "block.soa.coated_wooden_panel_signal": "Coated Wooden Panel Signal",
+  "block.soa.pitch_framed_padding": "Pitch Framed Padding",
+  "block.soa.dark_framed_padding": "Dark Framed Padding",
+  "block.soa.cloudy_framed_padding": "Cloudy Framed Padding",
+  "block.soa.bright_framed_padding": "Bright Framed Padding",
+  "block.soa.framed_carbonite": "Framed Carbonite",
+  "block.soa.packed_framed_carbonite": "Packed Framed Carbonite",
   "item.soa.steel_ingot": "Steel Ingot",
   "item.soa.proto_gun": "Proto Gun"
 }

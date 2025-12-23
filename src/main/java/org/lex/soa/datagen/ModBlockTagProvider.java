@@ -45,7 +45,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.OVERGROWN_LUNAR_PANEL_SLAB.get())
                 .add(ModBlocks.TILED_OVERGROWN_LUNAR_PANEL.get())
                 .add(ModBlocks.TILED_OVERGROWN_LUNAR_PANEL_SLAB.get())
-                .add(ModBlocks.DOUBLE_OVERGROWN_LUNAR_PANEL.get());
+                .add(ModBlocks.DOUBLE_OVERGROWN_LUNAR_PANEL.get())
+                .add(ModBlocks.PITCH_FRAMED_PADDING.get())
+                .add(ModBlocks.DARK_FRAMED_PADDING.get())
+                .add(ModBlocks.CLOUDY_FRAMED_PADDING.get())
+                .add(ModBlocks.BRIGHT_FRAMED_PADDING.get())
+                .add(ModBlocks.FRAMED_CARBONITE.get())
+                .add(ModBlocks.PACKED_FRAMED_CARBONITE.get());
 
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.COLD_WOODEN_PANEL.get())
@@ -76,6 +82,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.LUNAR_PANEL_SLAB.get())
                 .add(ModBlocks.TILED_LUNAR_PANEL.get())
                 .add(ModBlocks.TILED_LUNAR_PANEL_SLAB.get())
-                .add(ModBlocks.DOUBLE_LUNAR_PANEL.get());
+                .add(ModBlocks.DOUBLE_LUNAR_PANEL.get())
+                .add(ModBlocks.FRAMED_CARBONITE.get())
+                .add(ModBlocks.PACKED_FRAMED_CARBONITE.get());
     }
 }

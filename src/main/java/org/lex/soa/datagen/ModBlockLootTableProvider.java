@@ -60,6 +60,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DOUBLE_LUSH_WOODEN_PANEL.get());
         dropSelf(ModBlocks.COATED_WOODEN_PANEL.get());
         dropSelf(ModBlocks.COATED_WOODEN_PANEL_SIGNAL.get());
+        dropSelf(ModBlocks.PITCH_FRAMED_PADDING.get());
+        dropSelf(ModBlocks.DARK_FRAMED_PADDING.get());
+        dropSelf(ModBlocks.CLOUDY_FRAMED_PADDING.get());
+        dropSelf(ModBlocks.BRIGHT_FRAMED_PADDING.get());
+        dropSelf(ModBlocks.FRAMED_CARBONITE.get());
+        dropSelf(ModBlocks.PACKED_FRAMED_CARBONITE.get());
 
     }
 

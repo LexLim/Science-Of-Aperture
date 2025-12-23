@@ -152,6 +152,30 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COATED_WOODEN_PANEL_SIGNAL = registerBlockWithItem("coated_wooden_panel_signal",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(COATED_WOODEN_PANEL.get())));
 
+    public static final DeferredBlock<Block> PITCH_FRAMED_PADDING = registerBlockWithItem("pitch_framed_padding",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.FUNGUS)
+                    .strength(1f, 0.3f)
+                    .noOcclusion()));
+
+    public static final DeferredBlock<Block> DARK_FRAMED_PADDING = registerBlockWithItem("dark_framed_padding",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get()).noOcclusion()));
+
+    public static final DeferredBlock<Block> CLOUDY_FRAMED_PADDING = registerBlockWithItem("cloudy_framed_padding",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get()).noOcclusion()));
+
+    public static final DeferredBlock<Block> BRIGHT_FRAMED_PADDING = registerBlockWithItem("bright_framed_padding",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get()).noOcclusion()));
+
+    public static final DeferredBlock<Block> FRAMED_CARBONITE = registerBlockWithItem("framed_carbonite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.STONE)
+                    .strength(1.5f, 6f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> PACKED_FRAMED_CARBONITE = registerBlockWithItem("packed_framed_carbonite",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(FRAMED_CARBONITE.get())));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlockWithItem(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
