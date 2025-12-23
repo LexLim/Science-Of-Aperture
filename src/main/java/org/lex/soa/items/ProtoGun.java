@@ -5,6 +5,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
@@ -109,6 +110,8 @@ public class ProtoGun extends Item {
             return true;
         }
         if((pPlayer.getCooldowns().isOnCooldown(pStack.getItem()))){
+            //stop swinging animation forcefully
+            pPlayer.swingTime = 0;
             return true;
         }
 
@@ -120,6 +123,11 @@ public class ProtoGun extends Item {
                 true
         );
 
+        return true;
+    }
+
+    @Override
+    public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
         return true;
     }
 

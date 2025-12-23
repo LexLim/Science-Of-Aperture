@@ -38,6 +38,7 @@ import org.apache.commons.lang3.Validate;
 import org.lex.soa.Soa;
 import org.lex.soa.items.ProtoGun;
 import org.lex.soa.registery.SoaEntities;
+import org.lex.soa.registery.SoaSounds;
 
 import javax.annotation.Nullable;
 import java.util.Optional;
@@ -160,12 +161,12 @@ public class ProtoPortal extends HangingEntity {
          */
         @Override
         public void dropItem(@Nullable Entity brokenEntity) {
-            this.playSound(SoundEvents.RESPAWN_ANCHOR_DEPLETE.value(), 1.0F, 1.0F);
+            this.playSound(SoaSounds.PORTAL_SUMMON.get(), 0.2F, 1.0F);
         }
 
         @Override
         public void playPlacementSound() {
-            this.playSound(SoundEvents.RESPAWN_ANCHOR_SET_SPAWN, 1.0F, 1.0F);
+            this.playSound(SoaSounds.PORTAL_WITHER.get(), 0.2F, 1.0F);
         }
 
         public void setDestination(Optional<BlockPos> destPos) {

@@ -1,0 +1,21 @@
+{
+  "portal_summon": {
+    "subtitle": "sounds.soa.portal_summon"
+  },
+  "portal_wither": {
+    "subtitle": "sounds.soa.portal_wither"
+  },
+  "gun_deplete_primary": {
+    "subtitle": "sounds.soa.gun_deplete_primary",
+    "sounds": [
+      "soa:gun_deplete_primary"
+    ]
+  },
+  "gun_deplete_secondary": {
+    "subtitle": "sounds.soa.gun_deplete_secondary",
+    "sounds": [
+      "soa:gun_deplete_secondary"
+    ]
+  }
+
+}

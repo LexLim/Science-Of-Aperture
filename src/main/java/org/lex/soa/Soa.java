@@ -7,10 +7,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import org.lex.soa.networking.SoaMessages;
-import org.lex.soa.registery.ModBlocks;
-import org.lex.soa.registery.ModItems;
-import org.lex.soa.registery.SOACreativeTab;
-import org.lex.soa.registery.SoaEntities;
+import org.lex.soa.registery.*;
 import org.slf4j.Logger;
 
 import net.neoforged.bus.api.IEventBus;
@@ -30,6 +27,7 @@ public class Soa {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
 
+        SoaSounds.register(eventBus);
         SoaEntities.register(eventBus);
         SOACreativeTab.register(eventBus);
     }
