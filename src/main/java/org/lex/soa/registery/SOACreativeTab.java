@@ -114,10 +114,20 @@ public class SOACreativeTab {
                     })
                     .build());
 
+    public static final Supplier<CreativeModeTab> DECORATION_TAB = CREATIVE_MODE_TAB.register("soa_decoration_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STEEL_INGOT.get()))
+                    .title(Component.literal("SOA Deco"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Soa.MOD_ID, "soa_testing_elements_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+                        pOutput.accept(ModItems.PLACHOLDER_ITEM.get());
+                    })
+                    .build());
+
     public static final Supplier<CreativeModeTab> PORTAL_GUN_TAB = CREATIVE_MODE_TAB.register("soa_portal_gun_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PROTOGUN.get()))
                     .title(Component.literal("SOA Portal Gun"))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Soa.MOD_ID, "soa_testing_elements_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Soa.MOD_ID, "soa_decoration_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.PROTOGUN.get());
