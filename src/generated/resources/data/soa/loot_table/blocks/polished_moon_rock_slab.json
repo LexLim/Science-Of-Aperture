@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "soa:coated_wooden_panel_signal"
+          "name": "soa:polished_moon_rock_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soa:blocks/coated_wooden_panel_signal"
+  "random_sequence": "soa:blocks/polished_moon_rock_slab"
 }

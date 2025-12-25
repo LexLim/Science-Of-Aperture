@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "soa:block/coated_wooden_panel",
+    "side": "soa:block/double_coated_wooden_panel_top"
+  }
+}

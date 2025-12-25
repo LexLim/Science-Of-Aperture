@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "soa:block/polished_moon_rock",
+    "side": "soa:block/polished_moon_rock"
+  }
+}

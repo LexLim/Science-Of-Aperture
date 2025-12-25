@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "soa:block/wooden_panel_top",
+    "side": "soa:block/cold_wooden_panel_slab_side",
+    "top": "soa:block/wooden_panel_top"
+  }
+}

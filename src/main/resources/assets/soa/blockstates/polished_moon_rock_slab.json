@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "soa:block/polished_moon_rock_slab"
+    },
+    "type=double": {
+      "model": "soa:block/polished_moon_rock_slab_double"
+    },
+    "type=top": {
+      "model": "soa:block/polished_moon_rock_slab_top"
+    }
+  }
+}

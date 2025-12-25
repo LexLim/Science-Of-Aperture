@@ -1,8 +1,6 @@
 package org.lex.soa.registery;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Blocks;
 import org.lex.soa.Soa;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -51,6 +49,19 @@ public class SOACreativeTab {
                         pOutput.accept(ModBlocks.STEEL_GRATE.get());
                         pOutput.accept(ModBlocks.STEEL_DOOR.get());
                         pOutput.accept(ModBlocks.STEEL_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.MOON_ROCK.get());
+                        pOutput.accept(ModBlocks.POLISHED_MOON_ROCK.get());
+                        pOutput.accept(ModBlocks.POLISHED_MOON_ROCK_STAIRS.get());
+                        pOutput.accept(ModBlocks.POLISHED_MOON_ROCK_SLAB.get());
+                        pOutput.accept(ModBlocks.MOON_ROCK_BRICKS.get());
+                        pOutput.accept(ModBlocks.MOON_ROCK_BRICK_STAIRS.get());
+                        pOutput.accept(ModBlocks.MOON_ROCK_BRICK_SLAB.get());
+                        pOutput.accept(ModBlocks.CARBONITE.get());
+                        pOutput.accept(ModBlocks.POLISHED_CARBONITE.get());
+                        pOutput.accept(ModBlocks.POLISHED_CARBONITE_STAIRS.get());
+                        pOutput.accept(ModBlocks.POLISHED_CARBONITE_SLAB.get());
+                        pOutput.accept(ModBlocks.POLISHED_CARBONITE_TILES.get());
+                        pOutput.accept(ModBlocks.LARGE_POLISHED_CARBONITE_TILES.get());
                         pOutput.accept(ModBlocks.FRAMED_CARBONITE.get());
                         pOutput.accept(ModBlocks.PACKED_FRAMED_CARBONITE.get());
 
@@ -58,7 +69,7 @@ public class SOACreativeTab {
                     .build());
 
     public static final Supplier<CreativeModeTab> PANEL_TAB = CREATIVE_MODE_TAB.register("soa_panels_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.COATED_WOODEN_PANEL_SIGNAL.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.COATED_WOODEN_PANEL_TILES_SIGNAL.get()))
                     .title(Component.literal("SOA Panels"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Soa.MOD_ID, "soa_building_tab"))
                     .displayItems((pParameters, pOutput) -> {
@@ -90,22 +101,28 @@ public class SOACreativeTab {
 
 
                         pOutput.accept(ModBlocks.COLD_WOODEN_PANEL.get());
+                        pOutput.accept(ModBlocks.COLD_WOODEN_PANEL_SLAB.get());
                         pOutput.accept(ModBlocks.FRAMED_COLD_WOODEN_PANEL.get());
                         pOutput.accept(ModBlocks.DOUBLE_COLD_WOODEN_PANEL.get());
 
                         pOutput.accept(ModBlocks.LUSH_WOODEN_PANEL.get());
+                        pOutput.accept(ModBlocks.LUSH_WOODEN_PANEL_SLAB.get());
                         pOutput.accept(ModBlocks.FRAMED_LUSH_WOODEN_PANEL.get());
                         pOutput.accept(ModBlocks.DOUBLE_LUSH_WOODEN_PANEL.get());
 
                         pOutput.accept(ModBlocks.COATED_WOODEN_PANEL.get());
-                        pOutput.accept(ModBlocks.COATED_WOODEN_PANEL_SIGNAL.get());
+                        pOutput.accept(ModBlocks.COATED_WOODEN_PANEL_SLAB.get());
+                        pOutput.accept(ModBlocks.COATED_WOODEN_PANEL_TILES.get());
+                        pOutput.accept(ModBlocks.COATED_WOODEN_PANEL_TILES_SLAB.get());
+                        pOutput.accept(ModBlocks.COATED_WOODEN_PANEL_TILES_SIGNAL.get());
+                        pOutput.accept(ModBlocks.DOUBLE_COATED_WOODEN_PANEL.get());
 
                     })
                     .build());
 
     public static final Supplier<CreativeModeTab> TESTING_ELEMENTS_TAB = CREATIVE_MODE_TAB.register("soa_testing_elements_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PLACHOLDER_ITEM.get()))
-                    .title(Component.literal("SOA Portal Gun"))
+                    .title(Component.literal("SOA Testing Elements"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Soa.MOD_ID, "soa_panels_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
@@ -141,11 +158,7 @@ public class SOACreativeTab {
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Soa.MOD_ID, "soa_portal_gun_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        ModItems.ITEMS.getEntries().forEach(
-                                (item ) -> {
-                                    pOutput.accept(item.get());
-                                }
-                        );
+                        pOutput.accept(ModItems.STEEL_INGOT.get());
                     })
                     .build());
 

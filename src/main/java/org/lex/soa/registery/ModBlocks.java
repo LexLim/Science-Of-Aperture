@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.lex.soa.Soa;
 import org.lex.soa.blocks.DoublePanelBlock;
+import org.lex.soa.blocks.PaddedBlock;
 
 import java.util.function.Supplier;
 
@@ -40,6 +41,57 @@ public class ModBlocks {
 
     public static final DeferredBlock<TrapDoorBlock> STEEL_TRAPDOOR = registerBlockWithItem("steel_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.COPPER,BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
+
+    public static final DeferredBlock<Block> MOON_ROCK = registerBlockWithItem("moon_rock",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.BASALT)
+                    .strength(3f, 6f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> POLISHED_MOON_ROCK = registerBlockWithItem("polished_moon_rock",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MOON_ROCK.get())));
+
+    public static final DeferredBlock<StairBlock> POLISHED_MOON_ROCK_STAIRS = registerBlockWithItem("polished_moon_rock_stairs",
+            () -> new StairBlock(ModBlocks.MOON_ROCK.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(MOON_ROCK.get())));
+
+    public static final DeferredBlock<SlabBlock> POLISHED_MOON_ROCK_SLAB = registerBlockWithItem("polished_moon_rock_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(MOON_ROCK.get())));
+
+    public static final DeferredBlock<Block> MOON_ROCK_BRICKS = registerBlockWithItem("moon_rock_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MOON_ROCK.get())));
+
+    public static final DeferredBlock<StairBlock> MOON_ROCK_BRICK_STAIRS = registerBlockWithItem("moon_rock_brick_stairs",
+            () -> new StairBlock(ModBlocks.MOON_ROCK.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(MOON_ROCK.get())));
+
+    public static final DeferredBlock<SlabBlock> MOON_ROCK_BRICK_SLAB = registerBlockWithItem("moon_rock_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(MOON_ROCK.get())));
+
+    public static final DeferredBlock<Block> CARBONITE = registerBlockWithItem("carbonite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.STONE)
+                    .strength(1.5f, 6f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> POLISHED_CARBONITE = registerBlockWithItem("polished_carbonite",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
+    public static final DeferredBlock<StairBlock> POLISHED_CARBONITE_STAIRS = registerBlockWithItem("polished_carbonite_stairs",
+            () -> new StairBlock(ModBlocks.CARBONITE.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
+    public static final DeferredBlock<SlabBlock> POLISHED_CARBONITE_SLAB = registerBlockWithItem("polished_carbonite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
+    public static final DeferredBlock<Block> POLISHED_CARBONITE_TILES = registerBlockWithItem("polished_carbonite_tiles",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
+    public static final DeferredBlock<Block> LARGE_POLISHED_CARBONITE_TILES = registerBlockWithItem("large_polished_carbonite_tiles",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
+    public static final DeferredBlock<Block> FRAMED_CARBONITE = registerBlockWithItem("framed_carbonite",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
+    public static final DeferredBlock<Block> PACKED_FRAMED_CARBONITE = registerBlockWithItem("packed_framed_carbonite",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
 
     public static final DeferredBlock<Block> DARK_PANEL = registerBlockWithItem("steel_panel",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -122,8 +174,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COLD_WOODEN_PANEL = registerBlockWithItem("cold_wooden_panel",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
-                    .strength(2f, 3f)
-                    .requiresCorrectToolForDrops()));
+                    .strength(2f, 3f)));
+
+    public static final DeferredBlock<SlabBlock> COLD_WOODEN_PANEL_SLAB = registerBlockWithItem("cold_wooden_panel_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(COLD_WOODEN_PANEL.get())));
 
     public static final DeferredBlock<Block> FRAMED_COLD_WOODEN_PANEL = registerBlockWithItem("framed_cold_wooden_panel",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(COLD_WOODEN_PANEL.get())));
@@ -134,8 +188,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LUSH_WOODEN_PANEL = registerBlockWithItem("lush_wooden_panel",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
-                    .strength(1.4f, 2.8f)
-                    .requiresCorrectToolForDrops()));
+                    .strength(1.4f, 2.8f)));
+
+    public static final DeferredBlock<SlabBlock> LUSH_WOODEN_PANEL_SLAB = registerBlockWithItem("lush_wooden_panel_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(LUSH_WOODEN_PANEL.get())));
 
     public static final DeferredBlock<Block> FRAMED_LUSH_WOODEN_PANEL = registerBlockWithItem("framed_lush_wooden_panel",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(LUSH_WOODEN_PANEL.get())));
@@ -146,35 +202,37 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COATED_WOODEN_PANEL = registerBlockWithItem("coated_wooden_panel",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
-                    .strength(2.5f, 2.5f)
-                    .requiresCorrectToolForDrops()));
+                    .strength(2.5f, 2.5f)));
 
-    public static final DeferredBlock<Block> COATED_WOODEN_PANEL_SIGNAL = registerBlockWithItem("coated_wooden_panel_signal",
+    public static final DeferredBlock<SlabBlock> COATED_WOODEN_PANEL_SLAB = registerBlockWithItem("coated_wooden_panel_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(COATED_WOODEN_PANEL.get())));
+
+    public static final DeferredBlock<Block> COATED_WOODEN_PANEL_TILES = registerBlockWithItem("coated_wooden_panel_tiles",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(COATED_WOODEN_PANEL.get())));
 
-    public static final DeferredBlock<Block> PITCH_FRAMED_PADDING = registerBlockWithItem("pitch_framed_padding",
-            () -> new Block(BlockBehaviour.Properties.of()
+    public static final DeferredBlock<SlabBlock> COATED_WOODEN_PANEL_TILES_SLAB = registerBlockWithItem("coated_wooden_panel_tiles_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(COATED_WOODEN_PANEL.get())));
+
+    public static final DeferredBlock<Block> COATED_WOODEN_PANEL_TILES_SIGNAL = registerBlockWithItem("coated_wooden_panel_tiles_signal",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(COATED_WOODEN_PANEL.get())));
+
+    public static final DeferredBlock<DoublePanelBlock> DOUBLE_COATED_WOODEN_PANEL = registerBlockWithItem("double_coated_wooden_panel",
+            () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(COATED_WOODEN_PANEL.get())));
+
+    public static final DeferredBlock<PaddedBlock> PITCH_FRAMED_PADDING = registerBlockWithItem("pitch_framed_padding",
+            () -> new PaddedBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.FUNGUS)
                     .strength(1f, 0.3f)
                     .noOcclusion()));
 
-    public static final DeferredBlock<Block> DARK_FRAMED_PADDING = registerBlockWithItem("dark_framed_padding",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get()).noOcclusion()));
+    public static final DeferredBlock<PaddedBlock> DARK_FRAMED_PADDING = registerBlockWithItem("dark_framed_padding",
+            () -> new PaddedBlock(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get())));
 
-    public static final DeferredBlock<Block> CLOUDY_FRAMED_PADDING = registerBlockWithItem("cloudy_framed_padding",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get()).noOcclusion()));
+    public static final DeferredBlock<PaddedBlock> CLOUDY_FRAMED_PADDING = registerBlockWithItem("cloudy_framed_padding",
+            () -> new PaddedBlock(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get())));
 
-    public static final DeferredBlock<Block> BRIGHT_FRAMED_PADDING = registerBlockWithItem("bright_framed_padding",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get()).noOcclusion()));
-
-    public static final DeferredBlock<Block> FRAMED_CARBONITE = registerBlockWithItem("framed_carbonite",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.STONE)
-                    .strength(1.5f, 6f)
-                    .requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<Block> PACKED_FRAMED_CARBONITE = registerBlockWithItem("packed_framed_carbonite",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(FRAMED_CARBONITE.get())));
+    public static final DeferredBlock<PaddedBlock> BRIGHT_FRAMED_PADDING = registerBlockWithItem("bright_framed_padding",
+            () -> new PaddedBlock(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get())));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlockWithItem(String name, Supplier<T> block) {

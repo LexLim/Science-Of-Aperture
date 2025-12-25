@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "soa:block/coated_wooden_panel_tiles_signal"
+  }
+}

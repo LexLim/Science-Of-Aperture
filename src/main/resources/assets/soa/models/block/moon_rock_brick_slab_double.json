@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "soa:block/moon_rock_bricks",
+    "side": "soa:block/moon_rock_bricks"
+  }
+}

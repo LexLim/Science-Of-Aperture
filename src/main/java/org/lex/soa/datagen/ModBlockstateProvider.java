@@ -1,7 +1,6 @@
 package org.lex.soa.datagen;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -37,7 +36,7 @@ public class ModBlockstateProvider extends BlockStateProvider {
         logBlock((RotatedPillarBlock) ModBlocks.LUSH_WOODEN_PANEL.get());
         logBlock((RotatedPillarBlock) ModBlocks.FRAMED_LUSH_WOODEN_PANEL.get());
         blockWithItem(ModBlocks.COATED_WOODEN_PANEL);
-        blockWithItem(ModBlocks.COATED_WOODEN_PANEL_SIGNAL);
+        blockWithItem(ModBlocks.COATED_WOODEN_PANEL_TILES_SIGNAL);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

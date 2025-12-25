@@ -1,12 +1,18 @@
 {
   "values": [
     "soa:cold_wooden_panel",
+    "soa:cold_wooden_panel_slab",
     "soa:framed_cold_wooden_panel",
     "soa:double_cold_wooden_panel",
     "soa:lush_wooden_panel",
+    "soa:lush_wooden_panel_slab",
     "soa:framed_lush_wooden_panel",
     "soa:double_lush_wooden_panel",
     "soa:coated_wooden_panel",
-    "soa:coated_wooden_panel_signal"
+    "soa:coated_wooden_panel_slab",
+    "soa:coated_wooden_panel_tiles",
+    "soa:coated_wooden_panel_tiles_slab",
+    "soa:coated_wooden_panel_tiles_signal",
+    "soa:double_coated_wooden_panel"
   ]
 }
