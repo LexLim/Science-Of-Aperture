@@ -159,6 +159,7 @@ public class SOACreativeTab {
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.STEEL_INGOT.get());
+                        pOutput.accept(ModItems.MOON_DUST.get());
                     })
                     .build());
 

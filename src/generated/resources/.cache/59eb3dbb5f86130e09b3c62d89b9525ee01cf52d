@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-24T21:28:52.9868949	Loot Tables
+// 1.21.1	2025-12-25T16:57:09.2555646	Loot Tables
 67727713e6176077e8be2504b3dc6c791a1404dd data/soa/loot_table/blocks/bright_framed_padding.json
 165e4862611bbb286b5ac94dcacf212400eeff68 data/soa/loot_table/blocks/carbonite.json
 7b3d328ff2c0ce4af3e0ad4cfd182bb4cc77fa3c data/soa/loot_table/blocks/cloudy_framed_padding.json
@@ -28,7 +28,7 @@ c5a82542dba512e180dd84b978837dfb881d11e0 data/soa/loot_table/blocks/framed_cold_
 0611984ae32d46014fff4747c0f73821acd41d8a data/soa/loot_table/blocks/large_polished_carbonite_tiles.json
 491351eda3556325782a367c3ef7b22a8b34edce data/soa/loot_table/blocks/lush_wooden_panel.json
 df589942ffeeb512e27f0941815f2a135fdbb47d data/soa/loot_table/blocks/lush_wooden_panel_slab.json
-d2769f55bbf023a5ec80872f266cfe009c13eee3 data/soa/loot_table/blocks/moon_rock.json
+514ae26a43275146e7075a8e4887f40a3142d327 data/soa/loot_table/blocks/moon_rock.json
 ec94d6035348c8c8b2b400164650897250b7ff0a data/soa/loot_table/blocks/moon_rock_bricks.json
 165043fd1140008ed36061783e4b860c6b8736b4 data/soa/loot_table/blocks/moon_rock_brick_slab.json
 0f80cd17b10ed6a9a168fee3527dbc7ab2c2338a data/soa/loot_table/blocks/moon_rock_brick_stairs.json

@@ -19,6 +19,9 @@ public class ModItems {
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> MOON_DUST = ITEMS.register("moon_dust",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> PROTOGUN = ITEMS.register("proto_gun",
             () -> new ProtoGun(new Item.Properties()));
 
