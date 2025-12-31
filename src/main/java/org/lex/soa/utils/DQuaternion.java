@@ -165,7 +165,7 @@ public class DQuaternion {
         );
     }
 
-    // firstly apply "this" and then "other"
+    // firstly applyDatToItem "this" and then "other"
     public DQuaternion combine(DQuaternion other) {
         return other.hamiltonProduct(this);
     }

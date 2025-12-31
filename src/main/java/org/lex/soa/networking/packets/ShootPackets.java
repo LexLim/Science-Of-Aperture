@@ -6,10 +6,9 @@ import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
-import org.checkerframework.checker.units.qual.C;
 import org.lex.soa.Soa;
 
-public class ShootPacket {
+public class ShootPackets {
     public record ClientboundAnimatePortalPacket(CompoundTag tag) implements CustomPacketPayload {
 
         public static final CustomPacketPayload.Type<ClientboundAnimatePortalPacket> TYPE = new CustomPacketPayload.Type<>(ResourceLocation

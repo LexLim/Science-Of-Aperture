@@ -6,30 +6,22 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.decoration.ItemFrame;
-import net.minecraft.world.entity.monster.Creeper;
-import net.minecraft.world.entity.monster.Spider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.ClipContext.Block;
 import net.minecraft.world.level.ClipContext.Fluid;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
-import org.lex.soa.Soa;
-import org.lex.soa.entity.ProtoPortal;
 import org.lex.soa.networking.SoaMessages;
-import org.lex.soa.networking.packets.ShootPacket;
+import org.lex.soa.networking.packets.ShootPackets;
+import org.lex.soa.utils.PortalLevelUtils;
 
 
 public class ProtoGun extends Item {
@@ -41,7 +33,9 @@ public class ProtoGun extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
         //return super.use(level, player, usedHand);
-
+        if(player.isShiftKeyDown()) {
+            return new InteractionResultHolder<>(InteractionResult.FAIL, player.getItemInHand(usedHand));
+        }
         return this.shoot(level, player, usedHand, false);
     }
 
@@ -71,32 +65,19 @@ public class ProtoGun extends Item {
         // Server side
         // TODO: do the animation and segment shooting
         SoaMessages.fuckingAnnounce(
-                new ShootPacket.ClientboundAnimatePortalPacket(
+                new ShootPackets.ClientboundAnimatePortalPacket(
                         new CompoundTag()
                 ),
                 player
         );
 
 
-        if (left) {
-            ProtoPortal pp = new ProtoPortal(world, pos, raytrace.getDirection());
-
-            if (pp!= null) {
-                pp.playPlacementSound();
-
-                //mob.moveTo(pos.getX(), pos.getY() + 2, pos.getZ(), 0.0F, 0.0F);
-                world.addFreshEntity(pp);
-            }
-        } else {
-            ProtoPortal pp = new ProtoPortal(world, pos, raytrace.getDirection());
-
-            if (pp!= null) {
-                pp.playPlacementSound();
-
-                //mob.moveTo(pos.getX(), pos.getY() + 2, pos.getZ(), 0.0F, 0.0F);
-                world.addFreshEntity(pp);
-            }
-        }
+        PortalLevelUtils.TraceAndCreatePortal(
+                world,
+                player,
+                item,
+                left
+        );
 
         player.getCooldowns().addCooldown(item.getItem(), 20);
         player.stopUsingItem();
