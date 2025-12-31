@@ -36,6 +36,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STEEL_TRAPDOOR.get());
         add(ModBlocks.MOON_ROCK.get(),
                 block -> createRandomItemDrops(ModBlocks.MOON_ROCK.get(), ModItems.MOON_DUST.get(), 1, 4));
+        dropSelf(ModBlocks.STEEL_PLATING.get());
+        dropSelf(ModBlocks.LARGE_STEEL_PLATING.get());
         dropSelf(ModBlocks.POLISHED_MOON_ROCK.get());
         dropSelf(ModBlocks.POLISHED_MOON_ROCK_STAIRS.get());
         dropSelf(ModBlocks.POLISHED_MOON_ROCK_SLAB.get());
@@ -46,10 +48,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.POLISHED_CARBONITE.get());
         dropSelf(ModBlocks.POLISHED_CARBONITE_STAIRS.get());
         dropSelf(ModBlocks.POLISHED_CARBONITE_SLAB.get());
-        dropSelf(ModBlocks.POLISHED_CARBONITE_TILES.get());
-        dropSelf(ModBlocks.LARGE_POLISHED_CARBONITE_TILES.get());
         dropSelf(ModBlocks.FRAMED_CARBONITE.get());
         dropSelf(ModBlocks.PACKED_FRAMED_CARBONITE.get());
+        dropSelf(ModBlocks.POLISHED_CARBONITE_TILES.get());
+        dropSelf(ModBlocks.LARGE_POLISHED_CARBONITE_TILES.get());
+        dropSelf(ModBlocks.COATED_POLISHED_CARBONITE_TILES.get());
+        dropSelf(ModBlocks.LARGE_COATED_POLISHED_CARBONITE_TILES.get());
+        dropSelf(ModBlocks.SUN_TILES.get());
+        dropSelf(ModBlocks.LARGE_SUN_TILES.get());
         dropSelf(ModBlocks.DARK_PANEL.get());
         add(ModBlocks.DARK_PANEL_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.DARK_PANEL_SLAB.get()));
@@ -100,6 +106,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DARK_FRAMED_PADDING.get());
         dropSelf(ModBlocks.CLOUDY_FRAMED_PADDING.get());
         dropSelf(ModBlocks.BRIGHT_FRAMED_PADDING.get());
+        dropSelf(ModBlocks.CONCRETE_SUPPORT_BEAM.get());
+        dropSelf(ModBlocks.WARM_CONCRETE_SUPPORT_BEAM.get());
+        dropSelf(ModBlocks.COLD_CONCRETE_SUPPORT_BEAM.get());
+        dropSelf(ModBlocks.CONCRETE_WALL.get());
+        dropSelf(ModBlocks.COATED_CONCRETE_WALL.get());
 
     }
 

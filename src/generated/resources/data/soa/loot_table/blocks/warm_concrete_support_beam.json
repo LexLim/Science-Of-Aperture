@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "soa:warm_concrete_support_beam"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "soa:blocks/warm_concrete_support_beam"
+}

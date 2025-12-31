@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "soa:block/warm_concrete_support_beam_top",
+    "side": "soa:block/warm_concrete_support_beam"
+  }
+}

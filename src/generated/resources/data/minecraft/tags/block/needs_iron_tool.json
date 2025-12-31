@@ -4,6 +4,11 @@
     "soa:steel_panel_slab",
     "soa:tiled_steel_panel",
     "soa:tiled_steel_panel_slab",
-    "soa:double_steel_panel"
+    "soa:double_steel_panel",
+    "soa:decayed_steel_panel",
+    "soa:decayed_steel_panel_slab",
+    "soa:tiled_decayed_steel_panel",
+    "soa:tiled_decayed_steel_panel_slab",
+    "soa:double_decayed_steel_panel"
   ]
 }

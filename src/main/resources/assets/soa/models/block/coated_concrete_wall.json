@@ -1,0 +1,14 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "soa:block/coated_concrete_wall_top",
+    "down": "soa:block/coated_concrete_wall_bottom",
+    "north": "soa:block/coated_concrete_wall",
+    "east": "soa:block/coated_concrete_wall",
+    "south": "soa:block/coated_concrete_wall",
+    "west": "soa:block/coated_concrete_wall",
+    "particle": "soa:block/coated_concrete_wall_top"
+  }
+}

@@ -60,10 +60,25 @@ public class SOACreativeTab {
                         pOutput.accept(ModBlocks.POLISHED_CARBONITE.get());
                         pOutput.accept(ModBlocks.POLISHED_CARBONITE_STAIRS.get());
                         pOutput.accept(ModBlocks.POLISHED_CARBONITE_SLAB.get());
-                        pOutput.accept(ModBlocks.POLISHED_CARBONITE_TILES.get());
-                        pOutput.accept(ModBlocks.LARGE_POLISHED_CARBONITE_TILES.get());
+                        pOutput.accept(ModBlocks.CONCRETE_WALL.get());
+                        pOutput.accept(ModBlocks.COATED_CONCRETE_WALL.get());
                         pOutput.accept(ModBlocks.FRAMED_CARBONITE.get());
                         pOutput.accept(ModBlocks.PACKED_FRAMED_CARBONITE.get());
+                        pOutput.accept(ModBlocks.STEEL_PLATING.get());
+                        pOutput.accept(ModBlocks.LARGE_STEEL_PLATING.get());
+                        pOutput.accept(ModBlocks.SUN_TILES.get());
+                        pOutput.accept(ModBlocks.LARGE_SUN_TILES.get());
+                        pOutput.accept(ModBlocks.POLISHED_CARBONITE_TILES.get());
+                        pOutput.accept(ModBlocks.LARGE_POLISHED_CARBONITE_TILES.get());
+                        pOutput.accept(ModBlocks.COATED_POLISHED_CARBONITE_TILES.get());
+                        pOutput.accept(ModBlocks.LARGE_COATED_POLISHED_CARBONITE_TILES.get());
+                        pOutput.accept(ModBlocks.PITCH_FRAMED_PADDING.get());
+                        pOutput.accept(ModBlocks.DARK_FRAMED_PADDING.get());
+                        pOutput.accept(ModBlocks.CLOUDY_FRAMED_PADDING.get());
+                        pOutput.accept(ModBlocks.BRIGHT_FRAMED_PADDING.get());
+                        pOutput.accept(ModBlocks.CONCRETE_SUPPORT_BEAM.get());
+                        pOutput.accept(ModBlocks.WARM_CONCRETE_SUPPORT_BEAM.get());
+                        pOutput.accept(ModBlocks.COLD_CONCRETE_SUPPORT_BEAM.get());
 
                     })
                     .build());
@@ -132,7 +147,7 @@ public class SOACreativeTab {
                     .build());
 
     public static final Supplier<CreativeModeTab> DECORATION_TAB = CREATIVE_MODE_TAB.register("soa_decoration_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STEEL_INGOT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PLACHOLDER_ITEM.get()))
                     .title(Component.literal("SOA Deco"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Soa.MOD_ID, "soa_testing_elements_tab"))
                     .displayItems((pParameters, pOutput) -> {

@@ -1,0 +1,9 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "soa:block/concrete_wall_top",
+    "side": "soa:block/concrete_wall"
+  }
+}

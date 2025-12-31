@@ -26,6 +26,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.STEEL_GRATE.get())
                 .add(ModBlocks.STEEL_DOOR.get())
                 .add(ModBlocks.STEEL_TRAPDOOR.get())
+                .add(ModBlocks.STEEL_PLATING.get())
+                .add(ModBlocks.LARGE_STEEL_PLATING.get())
                 .add(ModBlocks.MOON_ROCK.get())
                 .add(ModBlocks.POLISHED_MOON_ROCK.get())
                 .add(ModBlocks.POLISHED_MOON_ROCK_STAIRS.get())
@@ -37,10 +39,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_CARBONITE.get())
                 .add(ModBlocks.POLISHED_CARBONITE_STAIRS.get())
                 .add(ModBlocks.POLISHED_CARBONITE_SLAB.get())
-                .add(ModBlocks.POLISHED_CARBONITE_TILES.get())
-                .add(ModBlocks.LARGE_POLISHED_CARBONITE_TILES.get())
                 .add(ModBlocks.FRAMED_CARBONITE.get())
                 .add(ModBlocks.PACKED_FRAMED_CARBONITE.get())
+                .add(ModBlocks.POLISHED_CARBONITE_TILES.get())
+                .add(ModBlocks.LARGE_POLISHED_CARBONITE_TILES.get())
+                .add(ModBlocks.COATED_POLISHED_CARBONITE_TILES.get())
+                .add(ModBlocks.LARGE_COATED_POLISHED_CARBONITE_TILES.get())
+                .add(ModBlocks.SUN_TILES.get())
+                .add(ModBlocks.LARGE_SUN_TILES.get())
                 .add(ModBlocks.DARK_PANEL.get())
                 .add(ModBlocks.DARK_PANEL_SLAB.get())
                 .add(ModBlocks.TILED_DARK_PANEL.get())
@@ -64,7 +70,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.PITCH_FRAMED_PADDING.get())
                 .add(ModBlocks.DARK_FRAMED_PADDING.get())
                 .add(ModBlocks.CLOUDY_FRAMED_PADDING.get())
-                .add(ModBlocks.BRIGHT_FRAMED_PADDING.get());
+                .add(ModBlocks.BRIGHT_FRAMED_PADDING.get())
+                .add(ModBlocks.CONCRETE_SUPPORT_BEAM.get())
+                .add(ModBlocks.WARM_CONCRETE_SUPPORT_BEAM.get())
+                .add(ModBlocks.COLD_CONCRETE_SUPPORT_BEAM.get())
+                .add(ModBlocks.CONCRETE_WALL.get())
+                .add(ModBlocks.COATED_CONCRETE_WALL.get());
 
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.COLD_WOODEN_PANEL.get())
@@ -87,7 +98,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DARK_PANEL_SLAB.get())
                 .add(ModBlocks.TILED_DARK_PANEL.get())
                 .add(ModBlocks.TILED_DARK_PANEL_SLAB.get())
-                .add(ModBlocks.DOUBLE_DARK_PANEL.get());
+                .add(ModBlocks.DOUBLE_DARK_PANEL.get())
+                .add(ModBlocks.DECAYED_DARK_PANEL.get())
+                .add(ModBlocks.DECAYED_DARK_PANEL_SLAB.get())
+                .add(ModBlocks.TILED_DECAYED_DARK_PANEL.get())
+                .add(ModBlocks.TILED_DECAYED_DARK_PANEL_SLAB.get())
+                .add(ModBlocks.DOUBLE_DECAYED_DARK_PANEL.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.STEEL_BLOCK.get())
@@ -102,6 +118,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.TILED_LUNAR_PANEL.get())
                 .add(ModBlocks.TILED_LUNAR_PANEL_SLAB.get())
                 .add(ModBlocks.DOUBLE_LUNAR_PANEL.get())
+                .add(ModBlocks.OVERGROWN_LUNAR_PANEL.get())
+                .add(ModBlocks.OVERGROWN_LUNAR_PANEL_SLAB.get())
+                .add(ModBlocks.TILED_OVERGROWN_LUNAR_PANEL.get())
+                .add(ModBlocks.TILED_OVERGROWN_LUNAR_PANEL_SLAB.get())
+                .add(ModBlocks.DOUBLE_OVERGROWN_LUNAR_PANEL.get())
                 .add(ModBlocks.MOON_ROCK.get())
                 .add(ModBlocks.POLISHED_MOON_ROCK.get())
                 .add(ModBlocks.POLISHED_MOON_ROCK_STAIRS.get())
@@ -115,7 +136,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_CARBONITE_SLAB.get())
                 .add(ModBlocks.POLISHED_CARBONITE_TILES.get())
                 .add(ModBlocks.LARGE_POLISHED_CARBONITE_TILES.get())
+                .add(ModBlocks.COATED_POLISHED_CARBONITE_TILES.get())
+                .add(ModBlocks.LARGE_COATED_POLISHED_CARBONITE_TILES.get())
+                .add(ModBlocks.SUN_TILES.get())
+                .add(ModBlocks.LARGE_SUN_TILES.get())
                 .add(ModBlocks.FRAMED_CARBONITE.get())
-                .add(ModBlocks.PACKED_FRAMED_CARBONITE.get());
+                .add(ModBlocks.PACKED_FRAMED_CARBONITE.get())
+                .add(ModBlocks.CONCRETE_WALL.get())
+                .add(ModBlocks.COATED_CONCRETE_WALL.get());
     }
 }

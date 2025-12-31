@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "soa:block/warm_concrete_support_beam_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "soa:block/warm_concrete_support_beam"
+    },
+    "axis=z": {
+      "model": "soa:block/warm_concrete_support_beam_horizontal",
+      "x": 90
+    }
+  }
+}

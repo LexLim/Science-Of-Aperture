@@ -9,8 +9,10 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.lex.soa.Soa;
+import org.lex.soa.blocks.CatwalkBlock;
 import org.lex.soa.blocks.DoublePanelBlock;
 import org.lex.soa.blocks.PaddedBlock;
+import org.lex.soa.blocks.RailingBlock;
 
 import java.util.function.Supplier;
 
@@ -41,6 +43,12 @@ public class ModBlocks {
 
     public static final DeferredBlock<TrapDoorBlock> STEEL_TRAPDOOR = registerBlockWithItem("steel_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.COPPER,BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
+
+    public static final DeferredBlock<Block> STEEL_PLATING = registerBlockWithItem("steel_plating",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
+
+    public static final DeferredBlock<Block> LARGE_STEEL_PLATING = registerBlockWithItem("large_steel_plating",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(STEEL_BLOCK.get())));
 
     public static final DeferredBlock<Block> MOON_ROCK = registerBlockWithItem("moon_rock",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -81,16 +89,28 @@ public class ModBlocks {
     public static final DeferredBlock<SlabBlock> POLISHED_CARBONITE_SLAB = registerBlockWithItem("polished_carbonite_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
 
+    public static final DeferredBlock<Block> FRAMED_CARBONITE = registerBlockWithItem("framed_carbonite",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
+    public static final DeferredBlock<Block> PACKED_FRAMED_CARBONITE = registerBlockWithItem("packed_framed_carbonite",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
     public static final DeferredBlock<Block> POLISHED_CARBONITE_TILES = registerBlockWithItem("polished_carbonite_tiles",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
 
     public static final DeferredBlock<Block> LARGE_POLISHED_CARBONITE_TILES = registerBlockWithItem("large_polished_carbonite_tiles",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
 
-    public static final DeferredBlock<Block> FRAMED_CARBONITE = registerBlockWithItem("framed_carbonite",
+    public static final DeferredBlock<Block> COATED_POLISHED_CARBONITE_TILES = registerBlockWithItem("coated_polished_carbonite_tiles",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
 
-    public static final DeferredBlock<Block> PACKED_FRAMED_CARBONITE = registerBlockWithItem("packed_framed_carbonite",
+    public static final DeferredBlock<Block> LARGE_COATED_POLISHED_CARBONITE_TILES = registerBlockWithItem("large_coated_polished_carbonite_tiles",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
+    public static final DeferredBlock<Block> SUN_TILES = registerBlockWithItem("sun_tiles",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
+
+    public static final DeferredBlock<Block> LARGE_SUN_TILES = registerBlockWithItem("large_sun_tiles",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(CARBONITE.get())));
 
     public static final DeferredBlock<Block> DARK_PANEL = registerBlockWithItem("steel_panel",
@@ -233,6 +253,25 @@ public class ModBlocks {
 
     public static final DeferredBlock<PaddedBlock> BRIGHT_FRAMED_PADDING = registerBlockWithItem("bright_framed_padding",
             () -> new PaddedBlock(BlockBehaviour.Properties.ofFullCopy(PITCH_FRAMED_PADDING.get())));
+
+    public static final DeferredBlock<RotatedPillarBlock> CONCRETE_SUPPORT_BEAM = registerBlockWithItem("concrete_support_beam",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .strength(1.8f, 1.8f)));
+
+    public static final DeferredBlock<RotatedPillarBlock> WARM_CONCRETE_SUPPORT_BEAM = registerBlockWithItem("warm_concrete_support_beam",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(CONCRETE_SUPPORT_BEAM.get())));
+
+    public static final DeferredBlock<RotatedPillarBlock> COLD_CONCRETE_SUPPORT_BEAM = registerBlockWithItem("cold_concrete_support_beam",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(CONCRETE_SUPPORT_BEAM.get())));
+
+    public static final DeferredBlock<Block> CONCRETE_WALL = registerBlockWithItem("concrete_wall",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.STONE)
+                    .strength(1.5f, 6f)));
+
+    public static final DeferredBlock<Block> COATED_CONCRETE_WALL = registerBlockWithItem("coated_concrete_wall",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CONCRETE_WALL.get())));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlockWithItem(String name, Supplier<T> block) {

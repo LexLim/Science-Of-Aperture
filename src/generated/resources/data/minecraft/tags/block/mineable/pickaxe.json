@@ -7,6 +7,8 @@
     "soa:steel_grate",
     "soa:steel_door",
     "soa:steel_trapdoor",
+    "soa:steel_plating",
+    "soa:large_steel_plating",
     "soa:moon_rock",
     "soa:polished_moon_rock",
     "soa:polished_moon_rock_stairs",
@@ -18,10 +20,14 @@
     "soa:polished_carbonite",
     "soa:polished_carbonite_stairs",
     "soa:polished_carbonite_slab",
-    "soa:polished_carbonite_tiles",
-    "soa:large_polished_carbonite_tiles",
     "soa:framed_carbonite",
     "soa:packed_framed_carbonite",
+    "soa:polished_carbonite_tiles",
+    "soa:large_polished_carbonite_tiles",
+    "soa:coated_polished_carbonite_tiles",
+    "soa:large_coated_polished_carbonite_tiles",
+    "soa:sun_tiles",
+    "soa:large_sun_tiles",
     "soa:steel_panel",
     "soa:steel_panel_slab",
     "soa:tiled_steel_panel",
@@ -45,6 +51,11 @@
     "soa:pitch_framed_padding",
     "soa:dark_framed_padding",
     "soa:cloudy_framed_padding",
-    "soa:bright_framed_padding"
+    "soa:bright_framed_padding",
+    "soa:concrete_support_beam",
+    "soa:warm_concrete_support_beam",
+    "soa:cold_concrete_support_beam",
+    "soa:concrete_wall",
+    "soa:coated_concrete_wall"
   ]
 }
