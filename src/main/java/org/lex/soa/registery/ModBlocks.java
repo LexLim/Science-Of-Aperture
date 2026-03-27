@@ -146,12 +146,6 @@ public class ModBlocks {
     public static final DeferredBlock<DoublePanelBlock> DOUBLE_DECAYED_DARK_PANEL = registerBlockWithItem("double_decayed_steel_panel",
             () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(DECAYED_DARK_PANEL.get())));
 
-    /*
-    * test block to get default behaviour or DoublePanelBlock class
-    public static final DeferredBlock<DoublePanelBlock> DOUBLE_TEST_PANEL = registerBlockWithItem("double_test_panel",
-            () -> new DoublePanelBlock(BlockBehaviour.Properties.ofFullCopy(DARK_PANEL.get())));
-     */
-
     public static final DeferredBlock<Block> LUNAR_PANEL = registerBlockWithItem("moon_rock_panel",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.DEEPSLATE)
@@ -280,10 +274,10 @@ public class ModBlocks {
                     .sound(SoundType.METAL)
                     .strength(2, 6f)));
 
-    /*public static final DeferredBlock<Block> TERMINAL_CRAFTER = registerBlockWithItem("terminal_crafter",
-            () -> new TerminalCrafterBlock(BlockBehaviour.Properties.of()
+    public static final DeferredBlock<PedestalButtonBlock> PEDESTAL_BUTTON = registerBlockWithItem("pedestal_button",
+            () -> new PedestalButtonBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.METAL)
-                    .strength(1.8f, 1.8f)));*/
+                    .strength(2, 6f)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlockWithItem(String name, Supplier<T> block) {

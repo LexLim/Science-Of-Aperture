@@ -40,8 +40,8 @@ public class SoaClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         SoaEntities.registerEntityRenderers();
-
     }
+
     @SubscribeEvent
     public static void register(RegisterPayloadHandlersEvent event) {
         final PayloadRegistrar registrar = event.registrar("1").executesOn(HandlerThread.NETWORK);
