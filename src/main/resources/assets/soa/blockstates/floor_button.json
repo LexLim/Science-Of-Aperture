@@ -1,0 +1,31 @@
+{
+  "variants": {
+
+    "part=southwest,pressed=false": {
+      "model": "soa:block/floor_button_sw"
+    },
+    "part=southeast,pressed=false": {
+      "model": "soa:block/floor_button_se"
+    },
+    "part=northwest,pressed=false": {
+      "model": "soa:block/floor_button_nw"
+    },
+    "part=northeast,pressed=false": {
+      "model": "soa:block/floor_button_ne"
+    },
+
+    "part=southwest,pressed=true": {
+      "model": "soa:block/floor_button_sw_pressed"
+    },
+    "part=southeast,pressed=true": {
+      "model": "soa:block/floor_button_se_pressed"
+    },
+    "part=northwest,pressed=true": {
+      "model": "soa:block/floor_button_nw_pressed"
+    },
+    "part=northeast,pressed=true": {
+      "model": "soa:block/floor_button_ne_pressed"
+    }
+
+  }
+}

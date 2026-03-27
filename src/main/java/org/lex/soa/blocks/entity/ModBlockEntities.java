@@ -1,4 +1,4 @@
-package org.lex.soa.blocks.entity;
+/*package org.lex.soa.blocks.entity;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -25,4 +25,4 @@ public class ModBlockEntities {
         BLOCK_ENTITIES.register(eventBus);
     }
 
-}
+}*/

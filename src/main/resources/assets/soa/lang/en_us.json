@@ -71,7 +71,10 @@
   "block.soa.cold_concrete_support_beam": "Cold Concrete Support Beam",
   "block.soa.concrete_wall": "Concrete Wall",
   "block.soa.coated_concrete_wall": "Coated_Concrete Wall",
+  "block.soa.floor_button": "Aperture Science Heavy Duty Super-Colliding Super-Button",
   "item.soa.steel_ingot": "Steel Ingot",
   "item.soa.moon_dust": "Moon Dust",
-  "item.soa.proto_gun": "Proto Gun"
+  "item.soa.proto_gun": "Proto Gun",
+  "sounds.soa.floor_button_press": "Aperture Science Heavy Duty Super-Colliding Super-Button clicks",
+  "sounds.soa.floor_button_release": "Aperture Science Heavy Duty Super-Colliding Super-Button releases"
 }

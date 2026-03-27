@@ -2,19 +2,50 @@
   "portal_summon": {
     "subtitle": "sounds.soa.portal_summon"
   },
+
   "portal_wither": {
     "subtitle": "sounds.soa.portal_wither"
   },
+
   "gun_deplete_primary": {
     "subtitle": "sounds.soa.gun_deplete_primary",
     "sounds": [
       "soa:gun_deplete_primary"
     ]
   },
+
   "gun_deplete_secondary": {
     "subtitle": "sounds.soa.gun_deplete_secondary",
     "sounds": [
       "soa:gun_deplete_secondary"
+    ]
+  },
+
+  "floor_button_press": {
+    "subtitle": "sounds.soa.floor_button_press",
+    "sounds": [
+      "soa:floor_button_press"
+    ]
+  },
+
+  "floor_button_release": {
+    "subtitle": "sounds.soa.floor_button_release",
+    "sounds": [
+      "soa:floor_button_release"
+    ]
+  },
+
+  "sliding_door_open": {
+    "subtitle": "sounds.soa.sliding_door_open",
+    "sounds": [
+      "soa:sliding_door_open"
+    ]
+  },
+
+  "sliding_door_close": {
+    "subtitle": "sounds.soa.sliding_door_close",
+    "sounds": [
+      "soa:sliding_door_close"
     ]
   }
 

@@ -270,10 +270,20 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COATED_CONCRETE_WALL = registerBlockWithItem("coated_concrete_wall",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(CONCRETE_WALL.get())));
 
-    public static final DeferredBlock<Block> TERMINAL_CRAFTER = registerBlockWithItem("terminal_crafter",
+    public static final DeferredBlock<FloorButtonBlock> FLOOR_BUTTON = registerBlockWithItem("floor_button",
+            () -> new FloorButtonBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .strength(2, 6f)));
+
+    public static final DeferredBlock<SlidingDoorBlock> SLIDING_DOOR = registerBlockWithItem("sliding_door",
+            () -> new SlidingDoorBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .strength(2, 6f)));
+
+    /*public static final DeferredBlock<Block> TERMINAL_CRAFTER = registerBlockWithItem("terminal_crafter",
             () -> new TerminalCrafterBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.METAL)
-                    .strength(1.8f, 1.8f)));
+                    .strength(1.8f, 1.8f)));*/
 
 
     private static <T extends Block> DeferredBlock<T> registerBlockWithItem(String name, Supplier<T> block) {
