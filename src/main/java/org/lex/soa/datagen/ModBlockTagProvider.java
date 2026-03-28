@@ -75,7 +75,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.WARM_CONCRETE_SUPPORT_BEAM.get())
                 .add(ModBlocks.COLD_CONCRETE_SUPPORT_BEAM.get())
                 .add(ModBlocks.CONCRETE_WALL.get())
-                .add(ModBlocks.COATED_CONCRETE_WALL.get());
+                .add(ModBlocks.COATED_CONCRETE_WALL.get())
+                .add(ModBlocks.FLOOR_BUTTON.get())
+                .add(ModBlocks.PEDESTAL_BUTTON.get())
+                .add(ModBlocks.SLIDING_DOOR.get())
+                .add(ModBlocks.CUBE_DISPENSER.get());
 
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.COLD_WOODEN_PANEL.get())
@@ -143,6 +147,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.FRAMED_CARBONITE.get())
                 .add(ModBlocks.PACKED_FRAMED_CARBONITE.get())
                 .add(ModBlocks.CONCRETE_WALL.get())
-                .add(ModBlocks.COATED_CONCRETE_WALL.get());
+                .add(ModBlocks.COATED_CONCRETE_WALL.get())
+                .add(ModBlocks.FLOOR_BUTTON.get())
+                .add(ModBlocks.PEDESTAL_BUTTON.get())
+                .add(ModBlocks.SLIDING_DOOR.get())
+                .add(ModBlocks.CUBE_DISPENSER.get());
     }
 }

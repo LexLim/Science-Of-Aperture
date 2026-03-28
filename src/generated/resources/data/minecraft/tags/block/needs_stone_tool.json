@@ -37,6 +37,10 @@
     "soa:framed_carbonite",
     "soa:packed_framed_carbonite",
     "soa:concrete_wall",
-    "soa:coated_concrete_wall"
+    "soa:coated_concrete_wall",
+    "soa:floor_button",
+    "soa:pedestal_button",
+    "soa:sliding_door",
+    "soa:cube_dispenser"
   ]
 }

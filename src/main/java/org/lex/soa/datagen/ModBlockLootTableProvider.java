@@ -111,6 +111,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.COLD_CONCRETE_SUPPORT_BEAM.get());
         dropSelf(ModBlocks.CONCRETE_WALL.get());
         dropSelf(ModBlocks.COATED_CONCRETE_WALL.get());
+        dropSelf(ModBlocks.FLOOR_BUTTON.get());
+        dropSelf(ModBlocks.PEDESTAL_BUTTON.get());
+        dropSelf(ModBlocks.SLIDING_DOOR.get());
+        dropSelf(ModBlocks.CUBE_DISPENSER.get());
 
     }
 

@@ -279,6 +279,11 @@ public class ModBlocks {
                     .sound(SoundType.METAL)
                     .strength(2, 6f)));
 
+    public static final DeferredBlock<CubeDispenserBlock> CUBE_DISPENSER = registerBlockWithItem("cube_dispenser",
+            () -> new CubeDispenserBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .strength(2, 6f)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlockWithItem(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

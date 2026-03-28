@@ -136,12 +136,15 @@ public class SOACreativeTab {
                     .build());
 
     public static final Supplier<CreativeModeTab> TESTING_ELEMENTS_TAB = CREATIVE_MODE_TAB.register("soa_testing_elements_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PLACHOLDER_ITEM.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PEDESTAL_BUTTON.get()))
                     .title(Component.literal("SOA Testing Elements"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Soa.MOD_ID, "soa_panels_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(ModItems.PLACHOLDER_ITEM.get());
+                        pOutput.accept(ModBlocks.FLOOR_BUTTON.get());
+                        pOutput.accept(ModBlocks.PEDESTAL_BUTTON.get());
+                        pOutput.accept(ModBlocks.CUBE_DISPENSER.get());
+                        pOutput.accept(ModBlocks.SLIDING_DOOR.get());
 
                     })
                     .build());

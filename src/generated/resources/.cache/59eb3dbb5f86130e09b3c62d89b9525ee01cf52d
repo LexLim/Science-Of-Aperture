@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-31T02:11:06.979671	Loot Tables
+// 1.21.1	2026-03-28T15:48:53.8280345	Loot Tables
 67727713e6176077e8be2504b3dc6c791a1404dd data/soa/loot_table/blocks/bright_framed_padding.json
 165e4862611bbb286b5ac94dcacf212400eeff68 data/soa/loot_table/blocks/carbonite.json
 7b3d328ff2c0ce4af3e0ad4cfd182bb4cc77fa3c data/soa/loot_table/blocks/cloudy_framed_padding.json
@@ -14,6 +14,7 @@ b93da1464990d0314a88598dd78303c2e982d3f0 data/soa/loot_table/blocks/coated_woode
 4b3e6c1b361c5213a94f71a89939987066dd33c5 data/soa/loot_table/blocks/cold_wooden_panel_slab.json
 320593f638f73551058c37b27930b27c981d7138 data/soa/loot_table/blocks/concrete_support_beam.json
 e2d9c7844a80ed22249a24c883abcc0ac4c87b66 data/soa/loot_table/blocks/concrete_wall.json
+9b6a07d9b6f1c4d5922a64021dd9841f4a5a86e1 data/soa/loot_table/blocks/cube_dispenser.json
 b8df2dd9a6358e004a1f5f0e6f695b91db014372 data/soa/loot_table/blocks/cut_steel_block.json
 aefa802c2f6b03cbd41cd53d6b97daa6e7702ef1 data/soa/loot_table/blocks/cut_steel_slab.json
 f620d92061b25d04df9dac0c0b976081db08c32d data/soa/loot_table/blocks/cut_steel_stairs.json
@@ -27,6 +28,7 @@ c827201bb3c3237212941062919dcf14fb52a22a data/soa/loot_table/blocks/dark_framed_
 38308a230c49907a40fd76720edec6aa4b1e3e43 data/soa/loot_table/blocks/double_moon_rock_panel.json
 f979ff62d10b3539a72f98145232ee40e57bbc77 data/soa/loot_table/blocks/double_overgrown_moon_rock_panel.json
 f0441c6825beb2302a0b65e9b9bb9a7e03f1477b data/soa/loot_table/blocks/double_steel_panel.json
+4bb9e679ec40ad15c44a209c53b010f1df479ca4 data/soa/loot_table/blocks/floor_button.json
 8a479a1d5bf2dc387ce019dd4a74ab93ea040954 data/soa/loot_table/blocks/framed_carbonite.json
 c5a82542dba512e180dd84b978837dfb881d11e0 data/soa/loot_table/blocks/framed_cold_wooden_panel.json
 80aa92e6d00330fa2ab896b0c51a6bf334d85b6c data/soa/loot_table/blocks/framed_lush_wooden_panel.json
@@ -45,6 +47,7 @@ ed2cb8be12110646e5b46a1e41590ef7b18535af data/soa/loot_table/blocks/moon_rock_pa
 a24f5f172d7035e47d1db1a483ec7c8f7918ee06 data/soa/loot_table/blocks/overgrown_moon_rock_panel.json
 f3f2b9f1bcd9c52e4d1fd5b28043a46cc8472d56 data/soa/loot_table/blocks/overgrown_moon_rock_panel_slab.json
 71367f2b70dbd6baabf26712ff97bece88c30d2b data/soa/loot_table/blocks/packed_framed_carbonite.json
+4effdec9fb1b458a75fbddac78416d6d4f7bb4ed data/soa/loot_table/blocks/pedestal_button.json
 4135472692322651d7365b71286d9d3485d04552 data/soa/loot_table/blocks/pitch_framed_padding.json
 ddb4781f4e96d863a408926db68fe6f3832d2b6a data/soa/loot_table/blocks/polished_carbonite.json
 328cca384af1724805808c47220c9eec4dcf5dd6 data/soa/loot_table/blocks/polished_carbonite_slab.json
@@ -53,6 +56,7 @@ ddb4781f4e96d863a408926db68fe6f3832d2b6a data/soa/loot_table/blocks/polished_car
 d665215c757aec25410adc35f8cdf810de694500 data/soa/loot_table/blocks/polished_moon_rock.json
 91b31b76019e4706b89a36ee8fe89a3822c57d3b data/soa/loot_table/blocks/polished_moon_rock_slab.json
 4db8b1d64628541c4303145c0b4966ec31d7eb68 data/soa/loot_table/blocks/polished_moon_rock_stairs.json
+6298c31843b9e2b59406fd7eca43f8423a7a7b86 data/soa/loot_table/blocks/sliding_door.json
 2b0f85ec5c95aed3c3c714ea0df277ddd7892104 data/soa/loot_table/blocks/steel_block.json
 0af08e697b665db6d0102f29d6f6f80d73abc942 data/soa/loot_table/blocks/steel_door.json
 39d9e0d060fe63e2350a6bd809d5972870dd3875 data/soa/loot_table/blocks/steel_grate.json

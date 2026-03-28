@@ -56,6 +56,10 @@
     "soa:warm_concrete_support_beam",
     "soa:cold_concrete_support_beam",
     "soa:concrete_wall",
-    "soa:coated_concrete_wall"
+    "soa:coated_concrete_wall",
+    "soa:floor_button",
+    "soa:pedestal_button",
+    "soa:sliding_door",
+    "soa:cube_dispenser"
   ]
 }
