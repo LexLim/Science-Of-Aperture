@@ -35,29 +35,25 @@ public class PedestalButtonBlock extends Block {
     public static final BooleanProperty POWERED =
             BlockStateProperties.POWERED;
 
-    private static final int PRESS_DURATION = 30;
-
-    // FLOOR / CEILING SHAPE (vertical pedestal)
+    private static final int PRESS_DURATION = 20;
 
     private static final VoxelShape FLOOR_SHAPE =
-            Block.box(5.75, 0, 5.75, 10.25, 16, 10.25);
+            Block.box(5.75, 0, 5.75, 10.25, 20, 10.25);
 
     private static final VoxelShape CEILING_SHAPE =
-            Block.box(5.75, 0, 5.75, 10.25, 16, 10.25);
-
-    // WALL SHAPES (horizontal pedestal)
+            Block.box(5.75, -4, 5.75, 10.25, 16, 10.25);
 
     private static final VoxelShape NORTH_SHAPE =
-            Block.box(5.75, 5.75, 0, 10.25, 10.25, 16);
+            Block.box(5.75, 5.75, -4, 10.25, 10.25, 16);
 
     private static final VoxelShape SOUTH_SHAPE =
-            Block.box(5.75, 5.75, 0, 10.25, 10.25, 16);
+            Block.box(5.75, 5.75, 0, 10.25, 10.25, 20);
 
     private static final VoxelShape WEST_SHAPE =
-            Block.box(0, 5.75, 5.75, 16, 10.25, 10.25);
+            Block.box(-4, 5.75, 5.75, 16, 10.25, 10.25);
 
     private static final VoxelShape EAST_SHAPE =
-            Block.box(0, 5.75, 5.75, 16, 10.25, 10.25);
+            Block.box(0, 5.75, 5.75, 20, 10.25, 10.25);
 
     public PedestalButtonBlock(Properties properties) {
 
@@ -71,8 +67,6 @@ public class PedestalButtonBlock extends Block {
         );
 
     }
-
-    // Placement logic
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -103,8 +97,6 @@ public class PedestalButtonBlock extends Block {
                 .setValue(FACING, horizontal);
 
     }
-
-    // Survival logic
 
     @Override
     public boolean canSurvive(
@@ -161,9 +153,6 @@ public class PedestalButtonBlock extends Block {
         return state;
 
     }
-
-    // Button press logic
-
     @Override
     public InteractionResult useWithoutItem(
             BlockState state,
@@ -200,9 +189,6 @@ public class PedestalButtonBlock extends Block {
         return InteractionResult.CONSUME;
 
     }
-
-    // Auto-release
-
     @Override
     public void tick(
             BlockState state,
@@ -225,8 +211,6 @@ public class PedestalButtonBlock extends Block {
 
     }
 
-    // Redstone output
-
     @Override
     public boolean isSignalSource(BlockState state) {
 
@@ -245,9 +229,6 @@ public class PedestalButtonBlock extends Block {
         return state.getValue(POWERED) ? 15 : 0;
 
     }
-
-    // Rotating hitbox
-
     @Override
     public VoxelShape getShape(
             BlockState state,
